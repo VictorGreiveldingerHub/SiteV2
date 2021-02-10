@@ -58,6 +58,12 @@ export default (state = initialState, action = {}) => {
         displayMenu: !state.displayMenu
       }
     }
+    case 'CLOSE_MENU': {
+      return {
+        ...state,
+        displayMenu: false,
+      }
+    };
     default: {
       return state;
     }

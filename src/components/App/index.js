@@ -3,8 +3,7 @@ import React from 'react';
 
 // Import Components
 import MenuNav from 'src/components/MenuNav';
-
-// import Header from 'src/components/Header';
+import Acceuil from 'src/components/Acceuil';
 
 // == Import
 import './styles.css';
@@ -14,7 +13,7 @@ const App = () => {
   return (
     <div className="app">
       <MenuNav />
-      {/* <Header /> */}
+      <Acceuil />
     </div>
   );
 };

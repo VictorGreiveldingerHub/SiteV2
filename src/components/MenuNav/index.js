@@ -9,44 +9,56 @@ import './styles.scss';
 
 const MenuNav = () => {
     const dispatch = useDispatch();
+
+    // Boutton pour afficher le menu avec state F/T 
     const showMenu = useSelector((state) => state.displayMenu);
-// On récup la valeur d'un map sur l'element du state que l'on veut mapper => ici navigation,
-// le tout mit dans navigationLinks
-    const navigationLinks = useSelector((state) => state.navigation).map((link) => {
-        if (showMenu) {
+
+    // On récup la valeur d'un map sur l'element du state que l'on veut mapper => ici navigation,
+    // le tout mit dans navigationLinks
+    // Nous retourne une liste avec les titres du sommaire
+    const navigationLinks = useSelector((state) => state.navigation);
+    
+    const navigationLinksJSX = navigationLinks.map((link) => {
         return (
             <NavLink
-                exact
                 key={link.id}
+                exact
                 to={link.url}
-                className={link.className}
-                activeClassName="menu-link--active"
+                className="nav-link"
             >
-                {link.identification}
+                <li key={link.id} className="list-summary">
+                    {link.identification}
+                </li>
             </NavLink>
         );
-        } else {
-            return <></>
-        }
     });
-    return (
-        <div className="header">
-            <div>
+    if ( showMenu ) {
+        return (
+            <>
+                <ul className="list-container">{navigationLinksJSX}</ul>
                 <button
-                    className="burger-menu-button"
-                    value={showMenu}
-                    onClick={() => dispatch({ type: 'DISPLAY_MENU'})}>
-                    <img
-                        src={MenuSvg}
-                        className="burger-menu"
-                    />
+                    className="cls-button"
+                    onClick={() => dispatch({ type: 'CLOSE_MENU'})}
+                >
+                    Close
                 </button>
+            </>
+        );
+    } else {
+        return (
+            <div className="header">
+                  <div>
+                        <button
+                            className="burger-menu-button" 
+                            value={showMenu}
+                            onClick={() => dispatch({ type: 'DISPLAY_MENU'})}
+                        >
+                            <img src={MenuSvg} className="burger-menu-icon" />
+                        </button>
+                    </div>
             </div>
-            <nav className="navigation-links">
-                {navigationLinks}
-            </nav>
-        </div>
-    );
+        );
+    }
 };
 
 export default MenuNav;
