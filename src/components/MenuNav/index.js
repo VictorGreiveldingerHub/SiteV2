@@ -40,7 +40,7 @@ const MenuNav = () => {
                     className="cls-button"
                     onClick={() => dispatch({ type: 'CLOSE_MENU'})}
                 >
-                    Close
+                    <div className="cls-line"/>Close
                 </button>
             </>
         );

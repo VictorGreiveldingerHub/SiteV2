@@ -1,6 +1,6 @@
 // Import npm
 import React from 'react';
-import { Tween, Timeline, SplitChars } from 'react-gsap';
+import { Tween, Timeline } from 'react-gsap';
 
 // Import Styles
 import './styles.scss';
@@ -9,7 +9,7 @@ const Acceuil = () => {
     return (
         <div className="acceuil-container">
             <div className="lastname">Greiveldinger</div>
-            <div className="firstname"><div className="line"></div>Victor</div>
+            <div className="firstname"><div className="line"/>Victor</div>
             <div className="info">developpeur junior</div>
             <div className="folio">
                 folio
@@ -24,6 +24,16 @@ const Acceuil = () => {
                 <div>Metz</div>
                 <div>france</div>
             </div>
+            <div className="count-div">introduction</div>
+            <div className="fast-summary">
+                <ul className="list-fast-summary">
+                    <li className="item-fast-summary">Intro</li>
+                    <li className="item-fast-summary">Profil</li>
+                    <li className="item-fast-summary">Works</li>
+                    <li className="item-fast-summary">Compétences</li>
+                </ul>
+            </div>
+            <div className="year">2021</div>
         </div>
     );
 };
