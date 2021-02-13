@@ -1,9 +1,20 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
+import { motion } from 'framer-motion';
 import './styles.scss';
 
 const Contact = () => {
+    const pageVariants = useSelector((state) => state.pageVariants);
+    const pageTransition = useSelector((state) => state.pageTransition);
     return (
-        <div className="content">
+        <motion.div
+            className="content"
+            initial="initial"
+            animate= "in"
+            exit="out"
+            variants={pageVariants}
+            transition={pageTransition}
+        >
             <div className="title">Parlons ensemble.</div>
             <div className="title-contact">CONTACT</div>
             <div className="formulaire">
@@ -25,7 +36,7 @@ const Contact = () => {
                     </div>
                 </form>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

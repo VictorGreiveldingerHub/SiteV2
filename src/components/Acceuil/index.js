@@ -1,6 +1,5 @@
 // Import npm
 import React from 'react';
-import { Tween, Timeline } from 'react-gsap';
 
 // Import Styles
 import './styles.scss';
@@ -14,9 +13,7 @@ const Acceuil = () => {
             <div className="folio">
                 folio
                 <div className="nbr-folio">
-                    <Timeline target={ <div>00<span style={{color: 'red', opacity: '0.7'}}>2</span></div> }>
-                        <Tween from={{x: '-50vw'}}  duration={2}/>
-                    </Timeline>
+                    <div>00<span style={{color: 'red', opacity: '0.7'}}>2</span></div>
                 </div>
             </div>
             <div className="contact">contact</div>
