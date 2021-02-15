@@ -16,9 +16,9 @@ const initialState = {
     },
     {
       id: 3,
-      url: '/about',
-      identification: 'About',
-      className:'about',
+      url: '/skills',
+      identification: 'Skills',
+      className:'skills',
     },
     {
       id: 4,

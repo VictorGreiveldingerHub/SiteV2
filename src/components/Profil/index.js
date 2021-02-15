@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { motion } from 'framer-motion';
+import ScrollForMore from 'src/components/ScrollForMore';
 
 import './styles.scss';
 
@@ -18,6 +19,7 @@ const Profil = () => {
         >
             <h3>Profil</h3>
             <div>Développeur junior</div>
+            <ScrollForMore />
         </motion.div>
     );
 };

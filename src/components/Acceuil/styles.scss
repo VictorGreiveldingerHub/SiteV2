@@ -1,22 +1,22 @@
 .lastname {
     position: absolute;
     top: 45%;
-    right: 20vw;
+    right: 27vw;
     font-size: 20px;
 }
 
 .firstname {
     position: absolute;
-    top: 50%;
-    right: 18vw;
+    bottom: 32.5vh;
+    right: 16vw;
     font-size: 20px;
 }
 
 .info {
     position: absolute;
-    top: 5.5vw;
-    right: 40%;
-    font-size: smaller;
+    top: 6.5vh;
+    right: 15vw;
+    font-size: 0.7em;
 }
 
 .folio {
@@ -25,21 +25,34 @@
     left: 25%;
     font-size: smaller;
 
-    & .nbr-folio {
-        writing-mode: vertical-rl;
-        text-orientation: mixed;
-        font-size: 9vw;
-    }
 }
 
-.line {
+.nbr-folio {
     position: absolute;
-    top: 50%;
-    right: 5vw;
-    height: 2px;
-    width: 7vw;
+    top: 35%;
+    left: 25%;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 9vw;
+}
+
+.line-disapear {
+    position: absolute;
+    bottom: 49vh;
+    right: 13vw;
+    height: 1px;
+    width: 4vw;
     background: rgb(53, 53, 53);
-    opacity: .15;
+    opacity: .7;
+}
+
+.line-display {
+    position: absolute;
+    bottom: 49vh;
+    right: 22vw;
+    height: 1px;
+    background: rgb(53, 53, 53);
+    opacity: .7;
 }
 
 .localisation {
@@ -78,4 +91,17 @@
 
 .item-fast-summary {
     margin: 2em 0;
+}
+
+.year {
+    position: absolute;
+    bottom: 30vw;
+    right: 45vw;
+}
+
+.web-mobile {
+    position: absolute;
+    top: 6.5vh;
+    left: 19vw;
+    font-size: 0.7em;
 }
