@@ -1,8 +1,16 @@
+.acceuil-container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../assets/images/img0.jpg");
+    background-position: right;
+    opacity: 0.5;
+    z-index: 1;
+}
 .lastname {
     position: absolute;
     top: 45%;
     right: 27vw;
-    font-size: 20px;
+    font-size: 2em;
 }
 
 .firstname {
@@ -33,7 +41,9 @@
     left: 25%;
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    font-size: 9vw;
+    font-size: 8vw;
+    height: 15vh;
+    letter-spacing: .5vh;
 }
 
 .line-disapear {
@@ -104,4 +114,34 @@
     top: 6.5vh;
     left: 19vw;
     font-size: 0.7em;
+}
+
+.rectangle-1 {
+    position: absolute;
+    top: 35vh;
+    left: 0;
+    width: 0;
+    height: 8vh;
+    background: url("../../assets/images/img0.jpg") 80.5vw 46.5vw;
+    opacity: 0.5;
+}
+
+.rectangle-2 {
+    position: absolute;
+    top: 44.2vh;
+    left: 0;
+    width: 0;
+    height: 8vh;
+    background: url("../../assets/images/img0.jpg") 80.5vw 42vw;
+    opacity: 0.5;
+}
+
+.rectangle-3 {
+    position: absolute;
+    top: 53.2vh;
+    left: 0;
+    width: 0;
+    height: 8vh;
+    background: url("../../assets/images/img0.jpg") 80.5vw 37vw;
+    opacity: 0.5;
 }

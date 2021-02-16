@@ -1,5 +1,6 @@
 // Import npm
 import React from 'react';
+import { useSelector } from 'react-redux';
 import { motion } from 'framer-motion';
 
 import MenuNav from 'src/components/MenuNav';
@@ -8,12 +9,21 @@ import MenuNav from 'src/components/MenuNav';
 import './styles.scss';
 
 const Acceuil = () => {
+    const imageVariants = useSelector((state) => state.imageVariants);
+    const imageTransition = useSelector((state) => state.imageTransition);
     const variants = {
         visible: { opacity: 1 },
         hidden: { opacity: 0 },
     };
+    
     return (
-        <div className="acceuil-container">
+        <div>
+            <motion.div className="acceuil-container" initial="initial"
+                animate= "in"
+                exit="out"
+                variants={imageVariants}
+                transition={imageTransition}
+            />
             <motion.div
                 className="lastname"
                 animate={{ x: 100}}
@@ -45,9 +55,26 @@ const Acceuil = () => {
             <motion.div className="web-mobile">web & web mobile</motion.div>
             <div className="folio">
                 folio
+                <motion.div
+                style={{
+                    position: "absolute",
+                    opacity: "0.7",
+                    height: "2px",
+                    background: "rgb(53, 53, 53)",
+                    top: "1.3vh",
+                    left: "-6vw",
+                }}
+                animate={{width : "5vw"}}
+                transition={{ ease: "easeIn", delay: 0.2 }}
+            />
             </div>
+            <motion.div>
+                <motion.div className="rectangle-1" animate={{width: "20vw", x: 250}} transition={{ease: "easeIn", duration: 1 ,delay: 1}}/>
+                <motion.div className="rectangle-2"  animate={{width: "20vw", x: 250}} transition={{ease: "easeIn", duration: 1 ,delay: 2}}/>
+                <motion.div className="rectangle-3"  animate={{width: "20vw", x: 250}} transition={{ease: "easeIn", duration: 1 ,delay: 3}}/>
+            </motion.div>
             <div className="nbr-folio">
-                <div>00<span style={{color: 'red', opacity: '0.7'}}>2</span></div>
+                <div>002</div>
             </div>
             {/* <MenuNav /> */}
             {/* <div className="contact">contact</div>
