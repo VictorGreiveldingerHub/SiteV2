@@ -1,6 +1,6 @@
 // Import npm
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import { motion } from 'framer-motion';
 
 import MenuNav from 'src/components/MenuNav';
@@ -11,11 +11,25 @@ import './styles.scss';
 const Acceuil = () => {
     const imageVariants = useSelector((state) => state.imageVariants);
     const imageTransition = useSelector((state) => state.imageTransition);
+    const rectangleValue = useSelector((state) => state.rectangleValue);
+    const dispatch = useDispatch();
+
     const variants = {
         visible: { opacity: 1 },
         hidden: { opacity: 0 },
     };
-    
+
+    const rectangleDisapear = {
+        visible: {opacity: 1},
+        hidden: {opacity: 0}
+    };
+
+    useEffect(() => {
+        setTimeout(() => {
+            dispatch({ type: 'HIDE_RECTANGLE'})
+        }, 5200
+        );
+    });
     return (
         <div>
             <motion.div className="acceuil-container" initial="initial"
@@ -68,15 +82,20 @@ const Acceuil = () => {
                 transition={{ ease: "easeIn", delay: 0.2 }}
             />
             </div>
-            <motion.div>
-                <motion.div className="rectangle-1" animate={{width: "20vw", x: 250}} transition={{ease: "easeIn", duration: 1 ,delay: 1}}/>
-                <motion.div className="rectangle-2"  animate={{width: "20vw", x: 250}} transition={{ease: "easeIn", duration: 1 ,delay: 2}}/>
-                <motion.div className="rectangle-3"  animate={{width: "20vw", x: 250}} transition={{ease: "easeIn", duration: 1 ,delay: 3}}/>
-            </motion.div>
-            <div className="nbr-folio">
-                <div>002</div>
-            </div>
-            {/* <MenuNav /> */}
+            { rectangleValue && (
+                <motion.div variants={rectangleDisapear} initial="hidden" animate="visible">
+                    <motion.div className="rectangle-1" animate={{width: "20vw", x: 250}} transition={{ease: "easeIn", duration: 1 ,delay: 1}}/>
+                    <motion.div className="rectangle-2"  animate={{width: "20vw", x: 250}} transition={{ease: "easeIn", duration: 1 ,delay: 2}}/>
+                    <motion.div className="rectangle-3"  animate={{width: "20vw", x: 250}} transition={{ease: "easeIn", duration: 1 ,delay: 3}}/>
+                </motion.div>   
+            )}
+            { !rectangleValue && (
+                <>
+                <motion.div className="nbr-folio" variants={rectangleDisapear} initial="hidden" animate="visible">002</motion.div>
+                <MenuNav />
+                </>
+            )}
+            
             {/* <div className="contact">contact</div>
             <div className="localisation">
                 <div>Metz</div>

@@ -94,6 +94,7 @@ const initialState = {
   pageStyle: {
     position: "absolute",
   },
+  rectangleValue: true,
 };
 
 
@@ -111,6 +112,12 @@ export default (state = initialState, action = {}) => {
         displayMenu: false,
       }
     };
+    case 'HIDE_RECTANGLE': {
+      return {
+        ...state,
+        rectangleValue: false,
+      }
+    }
     default: {
       return state;
     }
