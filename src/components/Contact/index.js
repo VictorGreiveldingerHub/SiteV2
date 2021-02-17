@@ -1,11 +1,15 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { motion } from 'framer-motion';
+
+import {
+    pageVariants,
+    pageTransition,
+} from 'src/utils/elementsParam.js';
+
 import './styles.scss';
 
 const Contact = () => {
-    const pageVariants = useSelector((state) => state.pageVariants);
-    const pageTransition = useSelector((state) => state.pageTransition);
     return (
         <motion.div
             className="content"

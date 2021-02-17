@@ -4,26 +4,21 @@ import { useSelector, useDispatch } from 'react-redux';
 import { motion } from 'framer-motion';
 
 import MenuNav from 'src/components/MenuNav';
+import {
+    variants,
+    rectangleDisapear,
+    imageTransition,
+    imageVariants
+} from 'src/utils/elementsParam.js';
 
 // Import Styles
 import './styles.scss';
 
 const Acceuil = () => {
-    const imageVariants = useSelector((state) => state.imageVariants);
-    const imageTransition = useSelector((state) => state.imageTransition);
     const rectangleValue = useSelector((state) => state.rectangleValue);
     const dispatch = useDispatch();
 
-    const variants = {
-        visible: { opacity: 1 },
-        hidden: { opacity: 0 },
-    };
-
-    const rectangleDisapear = {
-        visible: {opacity: 1},
-        hidden: {opacity: 0}
-    };
-
+// Pour cacher les rectangles après quelques secondes et éviter d'avoir un effet visuel non désiré
     useEffect(() => {
         setTimeout(() => {
             dispatch({ type: 'HIDE_RECTANGLE'})
@@ -93,24 +88,23 @@ const Acceuil = () => {
                 <>
                 <motion.div className="nbr-folio" variants={rectangleDisapear} initial="hidden" animate="visible">002</motion.div>
                 <MenuNav />
+                <motion.div className="contact" >contact</motion.div>
+                <motion.div className="localisation">
+                    <div>Metz</div>
+                    <div>france</div>
+                </motion.div>
+                <motion.div className="count-div" >introduction</motion.div>
+                <motion.div className="year" >2021</motion.div>
                 </>
             )}
-            
-            {/* <div className="contact">contact</div>
-            <div className="localisation">
-                <div>Metz</div>
-                <div>france</div>
-            </div>
-            <div className="count-div">introduction</div>
-            <div className="fast-summary">
+            {/* <div className="fast-summary">
                 <ul className="list-fast-summary">
                     <li className="item-fast-summary">Intro</li>
                     <li className="item-fast-summary">Profil</li>
                     <li className="item-fast-summary">Works</li>
                     <li className="item-fast-summary">Compétences</li>
                 </ul>
-            </div>
-            <div className="year">2021</div> */}
+            </div> */}
         </div>
     );
 };

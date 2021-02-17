@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
+import { transition } from 'src/utils/elementsParam.js';
 
 const ScrollForMore = () => {
   return (
