@@ -1,6 +1,7 @@
 const initialState = {
   name: 'Victor Greiveldinger',
   displayMenu: false,
+  rectangleValue: true,
   navigation: [
     {
       id: 1,
@@ -47,9 +48,7 @@ const initialState = {
       url: 'https://www.linkedin.com/in/victorgreiveldinger/',
     },
   ],
-  rectangleValue: true,
 };
-
 
 export default (state = initialState, action = {}) => {
   switch (action.type) {

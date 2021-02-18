@@ -2,12 +2,14 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { NavLink } from 'react-router-dom';
+import { motion, useCycle } from 'framer-motion';
 import MenuSvg from 'src/assets/images/menu.svg';
 
 // Import styles
 import './styles.scss';
 
 const MenuNav = () => {
+
     const dispatch = useDispatch();
 
     // Boutton pour afficher le menu avec state F/T 
@@ -17,11 +19,6 @@ const MenuNav = () => {
     // le tout mit dans navigationLinks
     // Nous retourne une liste avec les titres du sommaire
     const navigationLinks = useSelector((state) => state.navigation);
-    
-    // const variants = {
-    //     open: { opacity: 1, x: 0 },
-    //     closed: { opacity: 0, x: "-100%" },
-    // };
     
     const navigationLinksJSX = navigationLinks.map((link) => {
         return (

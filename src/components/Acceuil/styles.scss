@@ -6,18 +6,23 @@
     opacity: 0.5;
     z-index: 1;
 }
+
 .lastname {
     position: absolute;
-    top: 45%;
+    top: 40vh;
     right: 27vw;
     font-size: 2em;
+    color: white;
+    text-shadow: .1rem .1rem black;
 }
 
 .firstname {
     position: absolute;
     bottom: 32.5vh;
     right: 16vw;
-    font-size: 20px;
+    font-size: 2em;
+    color: white;
+    text-shadow: .1rem .1rem black;
 }
 
 .info {
@@ -32,7 +37,6 @@
     top: 30%;
     left: 25%;
     font-size: smaller;
-
 }
 
 .nbr-folio {
@@ -44,13 +48,14 @@
     font-size: 8vw;
     height: 15vh;
     letter-spacing: .5vh;
+    mix-blend-mode: darken;
 }
 
 .line-disapear {
     position: absolute;
     bottom: 49vh;
     right: 13vw;
-    height: 1px;
+    height: .2vh;
     width: 4vw;
     background: rgb(53, 53, 53);
     opacity: .7;
@@ -58,11 +63,12 @@
 
 .line-display {
     position: absolute;
-    bottom: 49vh;
-    right: 22vw;
-    height: 1px;
+    bottom: 50vh;
+    right: 25vw;
+    height: .3vh;
     background: rgb(53, 53, 53);
-    opacity: .7;
+    background: white;
+    text-shadow: .1rem .1rem black;
 }
 
 .localisation {
@@ -105,8 +111,13 @@
 
 .year {
     position: absolute;
-    bottom: 30vw;
+    bottom: 20vw;
     right: 45vw;
+    font-size: 2em;
+    overflow: hidden;
+    text-overflow: clip;
+    direction: rtl;
+    max-width: 5.7vw;
 }
 
 .web-mobile {

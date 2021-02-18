@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { motion } from 'framer-motion';
 
+// Import d'éléments annexes
 import MenuNav from 'src/components/MenuNav';
 import {
     variants,
@@ -15,6 +16,8 @@ import {
 import './styles.scss';
 
 const Acceuil = () => {
+
+// Pour le controle sur les rectangles et l'affichage des chiffres
     const rectangleValue = useSelector((state) => state.rectangleValue);
     const dispatch = useDispatch();
 
@@ -52,7 +55,7 @@ const Acceuil = () => {
             />
             <motion.div
                 className="line-display"
-                animate={{width : "5vw"}}
+                animate={{width : "3.5vw"}}
                 transition={{ ease: "easeIn", delay: 0.2 }}
             />
             <motion.div
