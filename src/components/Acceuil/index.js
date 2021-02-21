@@ -28,6 +28,7 @@ const Acceuil = () => {
         }, 5200
         );
     });
+
     return (
         <div>
             <motion.div className="acceuil-container" initial="initial"

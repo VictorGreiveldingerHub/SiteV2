@@ -6,7 +6,7 @@ import {
   useLocation,
 } from 'react-router-dom';
 
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 
 // Import Components
 import MenuNav from 'src/components/MenuNav';

@@ -1,8 +1,8 @@
 // == Import Npm / Yarn
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { Link } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
+import { NavLink } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 // Import Composants / fichiers
 import MenuSvg from 'src/assets/images/menu.svg';
@@ -25,46 +25,69 @@ const MenuNav = () => {
     const backdrop = {
         visible: { opacity: 1},
         hidden: { opacity: 0}
-    };
-    
+    };    
     const navigationLinksJSX = navigationLinks.map((link) => {
         return (
-            <Link
-                key={link.id}
-                exact
-                to={link.url}
-                className="nav-link"
-            >
-                <li key={link.id} className="list-summary">
-                    {link.identification}
-                </li>
-            </Link>
+            <li className="item" key={link.id}>
+                <NavLink
+                    className="link"
+                    to={link.url}
+                >
+                    <div className="inner-link">
+                        <span className="anim-layer">
+                            <motion.span
+                                className="anime-text"
+                            
+                            >
+                                {link.identification}
+                            </motion.span>
+                        </span>
+                        <motion.div className="label">
+                            {link.identification}
+                        </motion.div>
+                    </div>
+                </NavLink>
+            </li>
         );
     });
 
     return (
-        <AnimatePresence exitBeforeEnter>
+        <>
             { showMenu && (
-            <motion.div
-                className="backdrop"
-                variants={backdrop}
-                initial="hidden"
-                animate="visible"
-                onClick={() => dispatch({ type: 'CLOSE_MENU'})}
-            >
-                <motion.ul className="list-container">
-                    {navigationLinksJSX}
-                </motion.ul>
-                <button
-                    className="cls-button"
-                    onClick={() => dispatch({ type: 'CLOSE_MENU'})}
+                <motion.div
+                    className="backdrop"
+                    variants={backdrop}
+                    initial="hidden"
+                    animate="visible"
+                    // onClick={() => dispatch({ type: 'CLOSE_MENU'})}
                 >
-                    <div className="cls-line"/>Close
-                </button>
-            </motion.div>
+                    {/** Partie gauche */}
+                    <motion.button
+                        className="cls-button"
+                        onClick={() => dispatch({ type: 'CLOSE_MENU'})}
+                        whileHover={{ scale: 1.2}}
+                    >
+                        Close
+                    </motion.button>
+
+                     {/** Partie centrale */}
+                        <div className="partie-centrale">
+                            <div className="background-center-section"/>
+                            <nav className="menu-main-navigation">
+                                <ul className="list">
+                                    {navigationLinksJSX}
+                                </ul>
+                            </nav>
+                        </div>
+                   
+                    {/** Partie droite */}
+                    <div className="contact-zone">
+                        Linkedin
+                    </div>
+                </motion.div>
             )}
-        <div className="header">
-              <div>
+            <div className="header">
+                <div>
                     <button
                         className="burger-menu-button" 
                         onClick={() => dispatch({ type: 'DISPLAY_MENU'})}
@@ -72,9 +95,8 @@ const MenuNav = () => {
                         <img src={MenuSvg} className="burger-menu-icon" />
                     </button>
                 </div>
-        </div>
-        </AnimatePresence>
-        
+            </div>
+        </>
     );
 };
 

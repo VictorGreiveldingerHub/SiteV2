@@ -1,11 +1,14 @@
+// Container du menu
 .backdrop {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     height: 100%;
     width: 100%;
-    z-index: 1;
-    background: rgba(0, 0, 0, 0.5);
+    z-index: 100;
 }
 
 .burger-menu-icon {
@@ -23,59 +26,154 @@
     left: 2.1vw;
     bottom: 1.1vw;
     right: 1.1vw;
-    background-color:  #e5e5e5;
+    background-color: transparent;
     border: none;
     height: 0;
 }
 
-.navigation-links {
-    position: absolute;
-    background-color: white;
-    top: 2vw;
-    left: 2vw;
-    bottom: 2vw;
-    width: 80vw;
-    color: black;
-}
-
+// Section de gauche pour fermer le menu 
 .cls-button {
-    position: absolute;
-    top: calc(50% - 3.125vw / 2);
-    left: 91.14vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 20%;
     border: none;
     padding: 1em;
+    align-items: center;
+    overflow: visible;
     text-transform: uppercase;
-    background-color: #e5e5e5; 
+    background-color: #fc423f;
+    height: 100%;
+    justify-content: center;
+}
 
-    & .cls-line {
-        position: absolute;
-        top: 50%;
-        right: 7vw;
-        background-color: black;
-        width: 5vw;
-        height: 1px;
+// Partie centrale du menu
+.partie-centrale {
+    display: flex;
+    padding: 30vh 7.3vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    flex-grow: 2;
+    width: 60%;
+    overflow: hidden;
+}
+
+// Fond pour partie centrale
+.background-center-section {
+    background-color: #1b1b1b;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+// nav section
+.menu-main-navigation {
+    z-index: 10000;
+    display: block;
+}
+// Le ul
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+// Les li
+.item {
+    margin: 22px 0;
+    width: 45%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+// le NavLink 
+.link {
+    position: relative;
+    display: block;
+    pointer-events: all;
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+
+// div inner-link qui comprend les deux span + la div
+.inner-link {
+    pointer-events: none;
+    transform: translate(0%, 0px);
+    transition: 0.5s;
+}
+
+// Navigation
+
+.anim-layer {
+    backface-visibility: hidden;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    color: #fff;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transform: translate(100%, 0px);
+}
+
+.anime-text {
+    backface-visibility: hidden;
+    width: 100%;
+    display: block;
+    color: #fff;
+    transition: 0.5s;
+    font-size: 3em;
+    transform: translate(-100%, 0px);
+}
+
+.label {
+    font-size: 3em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: #fff;
+    -webkit-text-stroke-width: 1px;
+    text-transform: uppercase;
+    color: transparent;
+    pointer-events: none;
+}
+
+.item:hover {
+    .inner-link {
+        transform: translate(5%, 0px);
+        transition: 0.5s;
+    }
+    .anim-layer {
+        transition: 0.5s;
+        transform: translate(0%, 0px);
+    }
+    .anime-text {
+        transition: 0.5s;
+        transform: translate(0%, 0px);
     }
 }
 
-.list-summary {
-    flex-direction: row;
-    height: 100%;
-    top: 0;
-    width: 100%;
-}
 
-.list-container {
+//////////////////////////////////////////////
+
+// Partie droite
+.contact-zone {
+    padding: 30vh 0;
     display: flex;
-    position: absolute;
-    background-color: white;
-    padding: 0 10vw 0 2vw;
-    top: 2vw;
-    left: 2vw;
-    bottom: 2vw;
-    width: 80vw;
-    z-index: 1;
-}
-
-.nav-link {
-    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 20%;
+    height: 100%;
+    background-color: #ffffff;
 }

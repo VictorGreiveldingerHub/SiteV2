@@ -1,6 +1,6 @@
 const initialState = {
   name: 'Victor Greiveldinger',
-  displayMenu: false,
+  displayMenu: true,
   rectangleValue: true,
   navigation: [
     {
