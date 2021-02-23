@@ -27,15 +27,22 @@
 
 .info {
     position: absolute;
-    top: 6.5vh;
-    right: 15vw;
-    font-size: 0.7em;
+    top: 9vh;
+    right: 22vw;
+    font-size: 0.8em;
+}
+
+.web-mobile {
+    position: absolute;
+    top: 9vh;
+    left: 22vw;
+    font-size: 0.8em;
 }
 
 .folio {
     position: absolute;
-    top: 30%;
-    left: 25%;
+    top: 30vh;
+    left: 25vw;
     font-size: smaller;
 }
 
@@ -118,13 +125,6 @@
     text-overflow: clip;
     direction: rtl;
     max-width: 5.7vw;
-}
-
-.web-mobile {
-    position: absolute;
-    top: 6.5vh;
-    left: 19vw;
-    font-size: 0.7em;
 }
 
 .rectangle-1 {

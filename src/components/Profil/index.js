@@ -1,5 +1,4 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
 import { motion } from 'framer-motion';
 
 import { pageVariants, pageTransition } from 'src/utils/elementsParam.js';

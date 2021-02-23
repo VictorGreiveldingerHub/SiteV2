@@ -1,6 +1,6 @@
 const initialState = {
   name: 'Victor Greiveldinger',
-  displayMenu: true,
+  displayMenu: false,
   rectangleValue: true,
   navigation: [
     {
@@ -63,7 +63,7 @@ export default (state = initialState, action = {}) => {
         ...state,
         displayMenu: false,
       }
-    };
+    }
     case 'HIDE_RECTANGLE': {
       return {
         ...state,

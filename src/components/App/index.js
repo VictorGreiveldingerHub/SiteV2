@@ -1,15 +1,16 @@
 // == Import npm
 import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import {
   Switch,
   Route,
   useLocation,
+  Redirect,
 } from 'react-router-dom';
 
-import { AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 
 // Import Components
-import MenuNav from 'src/components/MenuNav';
 import Acceuil from 'src/components/Acceuil';
 import Profil from 'src/components/Profil';
 import Skills from 'src/components/Skills';
@@ -22,7 +23,8 @@ import './styles.css';
 // == Composant
 const App = () => {
   const location = useLocation();
-  
+  // const dispatch = useDispatch();
+  // const scrollLeft = useSelector((state) => state.scrollLeft);
   return (
     <div className="app">
       <AnimatePresence>

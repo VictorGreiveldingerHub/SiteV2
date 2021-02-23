@@ -83,7 +83,7 @@ const Acceuil = () => {
             </div>
             { rectangleValue && (
                 <motion.div variants={rectangleDisapear} initial="hidden" animate="visible">
-                    <motion.div className="rectangle-1" animate={{width: "20vw", x: 250}} transition={{ease: "easeIn", duration: 1 ,delay: 1}}/>
+                    <motion.div className="rectangle-1"  animate={{width: "20vw", x: 250}} transition={{ease: "easeIn", duration: 1 ,delay: 1}}/>
                     <motion.div className="rectangle-2"  animate={{width: "20vw", x: 250}} transition={{ease: "easeIn", duration: 1 ,delay: 2}}/>
                     <motion.div className="rectangle-3"  animate={{width: "20vw", x: 250}} transition={{ease: "easeIn", duration: 1 ,delay: 3}}/>
                 </motion.div>   

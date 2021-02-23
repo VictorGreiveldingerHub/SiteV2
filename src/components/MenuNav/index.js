@@ -3,6 +3,8 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
+// import { animate } from 'src/utils/firstThreeForm.js';
+
 
 // Import Composants / fichiers
 import MenuSvg from 'src/assets/images/menu.svg';
@@ -29,16 +31,10 @@ const MenuNav = () => {
     const navigationLinksJSX = navigationLinks.map((link) => {
         return (
             <li className="item" key={link.id}>
-                <NavLink
-                    className="link"
-                    to={link.url}
-                >
+                <NavLink className="link" to={link.url}>
                     <div className="inner-link">
                         <span className="anim-layer">
-                            <motion.span
-                                className="anime-text"
-                            
-                            >
+                            <motion.span className="anime-text">
                                 {link.identification}
                             </motion.span>
                         </span>
@@ -50,7 +46,6 @@ const MenuNav = () => {
             </li>
         );
     });
-
     return (
         <>
             { showMenu && (
@@ -65,9 +60,9 @@ const MenuNav = () => {
                     <motion.button
                         className="cls-button"
                         onClick={() => dispatch({ type: 'CLOSE_MENU'})}
-                        whileHover={{ scale: 1.2}}
                     >
                         Close
+                        {/* <div>{animate()}</div> */}
                     </motion.button>
 
                      {/** Partie centrale */}
