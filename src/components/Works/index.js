@@ -1,22 +1,21 @@
 import React, { useEffect } from 'react';
-import { motion } from 'framer-motion';
-import { pageVariants, pageTransition } from 'src/utils/elementsParam.js';
+import { Canvas } from 'react-three-fiber';
 import ImageSite from 'src/assets/images/img0.jpg';
+
+import Box from 'src/components/Works/Box';
 
 import './styles.scss';
 
 const Works = () => {
     return (
-        <motion.div
-            className="works-container"
-            initial="initial"
-            animate= "in"
-            exit="out"
-            variants={pageVariants}
-            transition={pageTransition}
+        <Canvas
+            colorManagement
+            camera={{ position: [0,0,120], fov: 70}}
         >
-            Back to 0. Essaie de react-three-fiber
-        </motion.div>
+            <ambientLight />
+            <pointLight position={[10, 10, 10]} />
+            <Box position={[1.2, 0, 0]} />
+        </Canvas>
     );
 };
 
