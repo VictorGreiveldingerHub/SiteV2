@@ -32,23 +32,20 @@ export const imageVariants = {
   initial: {
     opacity: 0,
     x: "100vw",
-    scale: 0.8,
   },
   in: {
     opacity: 1,
     x: 0,
-    scale: 1,
+    delay: 4,
   },
   out: {
     opacity: 0,
     x: "-100vw",
-    scale: 1.2
   },
 };
 
 export const imageTransition = {
   ease: "easeIn",
-  delay: 5
 };
 
 export const pageTransition = {
@@ -62,6 +59,6 @@ export const pageStyle = {
 };
 
 export const transition = {
-  duration: 1.4,
+  duration: 9,
   ease: [0.6, 0.01, -0.05, 0.9],
 };

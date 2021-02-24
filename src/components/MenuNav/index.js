@@ -3,7 +3,6 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
-// import { animate } from 'src/utils/firstThreeForm.js';
 
 
 // Import Composants / fichiers
@@ -25,13 +24,25 @@ const MenuNav = () => {
     const navigationLinks = useSelector((state) => state.navigation);
 
     const backdrop = {
-        visible: { opacity: 1},
+        visible: { opacity: 1, duration: 2},
         hidden: { opacity: 0}
-    };    
+    };
+    const test = {
+        visible: {easeIn: "ease", delay: 1, duration: 1},
+        hidden : {easeOut: "ease", duration: 0.1}
+    };
+    const test2 = {
+        visible: {easeIn: "ease", delay: 3, duration: 1},
+        hidden : {easeOut: "ease", duration: 0.1}
+    };
+    const test3 = {
+        visible: {easeIn: "ease", delay: 5, duration: 1},
+        hidden : {easeOut: "ease", duration: 0.1}
+    };
     const navigationLinksJSX = navigationLinks.map((link) => {
         return (
             <li className="item" key={link.id}>
-                <NavLink className="link" to={link.url}>
+                <NavLink className="link" to={link.url} activeClassName="active-item">
                     <div className="inner-link">
                         <span className="anim-layer">
                             <motion.span className="anime-text">
@@ -62,7 +73,6 @@ const MenuNav = () => {
                         onClick={() => dispatch({ type: 'CLOSE_MENU'})}
                     >
                         Close
-                        {/* <div>{animate()}</div> */}
                     </motion.button>
 
                      {/** Partie centrale */}

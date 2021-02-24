@@ -27,7 +27,7 @@ const App = () => {
   // const scrollLeft = useSelector((state) => state.scrollLeft);
   return (
     <div className="app">
-      <AnimatePresence>
+      <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.pathname}>
           <Route exact path="/" component={Acceuil} />
           <Route exact path="/profil" component={Profil} />
