@@ -56,7 +56,7 @@ const Profil = ({image}) => {
               exit={{ opacity: 0 }}
               transition={transition}
               className='information'>
-              <div className='title'>Victor Greiveldinger</div>
+              <div className='title-name'>Victor Greiveldinger</div>
               <div className='caracteristique'>
                 Développeur Junior
               </div>

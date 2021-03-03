@@ -5,6 +5,7 @@ import {imageDetails} from 'src/utils/elementsParam.js';
 import './styles.scss';
 //Components
 import ScrollForMore from "src/components/ScrollForMore";
+import Arrow from "src/components/Arrow";
 
 
 const transition = { duration: 2, ease: [0.6, 0.01, -0.05, 0.9] };
@@ -80,9 +81,6 @@ const Description = () => {
                 transition: { delay: 1.2, ...transition },
               }}
               className='details'>
-              <motion.div className='birth'>
-                <span>22 novembre 1995</span>
-              </motion.div>
             </motion.div>
             <motion.div className='model'>
               <motion.span className='first' variants={firstName}>
@@ -115,7 +113,7 @@ const Description = () => {
           initial={{opacity: 0}}
           animate={{
             width: "100%",
-            y: "28%",
+            y: "36%",
             opacity: 1,
             transition: { delay: 0.2, ...transition }
           }}
@@ -162,9 +160,6 @@ const Description = () => {
       <div className='detailed-information'>
         <div className='container-information'>
           <div className='row'>
-            <h2 className='title'>
-              The insiration behind the artwork & <br /> what it means.
-            </h2>
             <section className="hero-section">
               <div className="lines-container">
                 <div className="line-1">
@@ -174,9 +169,26 @@ const Description = () => {
                   to meet
                 </div>
                 <div className="line-3">
-                  a junior developper.
+                  a junior developper...
                 </div>
               </div>
+              <div className="small-description">
+                <ul className="items">
+                  <li className="item-list">
+                    22 - 11 - 1995
+                  </li>
+                  <li className="item-list">
+                    Quasiment 1 an de pratique
+                  </li>
+                  <li className="item-list">
+                    Motivé
+                  </li>
+                  <li className="item-list">
+                    victorgreiveldinger@gmail.com
+                  </li>
+                </ul>
+              </div>
+              <div>Télécharger mon CV <Arrow /></div>
             </section>
           </div>
         </div>
