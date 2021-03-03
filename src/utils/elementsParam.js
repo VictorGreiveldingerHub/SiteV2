@@ -50,7 +50,7 @@ export const imageTransition = {
 
 export const pageTransition = {
   type: "tween",
-  ease: "anticipate",
+  ease: [0.6, 0.01, -0.05, 0.9],
   duration: 1,
 };
 
@@ -61,4 +61,9 @@ export const pageStyle = {
 export const transition = {
   duration: 9,
   ease: [0.6, 0.01, -0.05, 0.9],
+};
+
+export const imageDetails = {
+  width: 524,
+  height: 650,
 };

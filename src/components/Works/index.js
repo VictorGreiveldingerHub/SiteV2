@@ -11,6 +11,7 @@ const Works = () => {
         <Canvas
             colorManagement
             camera={{ position: [0,0,120], fov: 70}}
+            gl
         >
             <ambientLight />
             <pointLight position={[10, 10, 10]} />

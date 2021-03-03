@@ -27,18 +27,7 @@ const MenuNav = () => {
         visible: { opacity: 1, duration: 2},
         hidden: { opacity: 0}
     };
-    const test = {
-        visible: {easeIn: "ease", delay: 1, duration: 1},
-        hidden : {easeOut: "ease", duration: 0.1}
-    };
-    const test2 = {
-        visible: {easeIn: "ease", delay: 3, duration: 1},
-        hidden : {easeOut: "ease", duration: 0.1}
-    };
-    const test3 = {
-        visible: {easeIn: "ease", delay: 5, duration: 1},
-        hidden : {easeOut: "ease", duration: 0.1}
-    };
+    
     const navigationLinksJSX = navigationLinks.map((link) => {
         return (
             <li className="item" key={link.id}>
@@ -65,7 +54,7 @@ const MenuNav = () => {
                     variants={backdrop}
                     initial="hidden"
                     animate="visible"
-                    // onClick={() => dispatch({ type: 'CLOSE_MENU'})}
+                    onClick={() => dispatch({ type: 'CLOSE_MENU'})}
                 >
                     {/** Partie gauche */}
                     <motion.button

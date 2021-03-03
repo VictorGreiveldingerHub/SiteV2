@@ -1,5 +1,33 @@
-.profil-container {
-    position: absolute;
-    top: 4.5vw;
-    left: 10vw;
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+
+.thumbnail {
+    overflow: hidden;
+    position: relative;
+    top: 8em;
+}
+
+.container {
+    position: relative;
+}
+
+.row-center {
+    height: 100%;
+    align-items: center;
+}
+
+.image-container {
+    position: relative;
+}
+
+.frame img {
+    width: 100%;
+}
+
+.information {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 10em;
+    font-size: .9em;
 }
