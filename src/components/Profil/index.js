@@ -31,9 +31,6 @@ const Profil = ({image}) => {
             <div
               className='thumbnail'
               ref={image}
-              style={{
-                width: imageDetails.width,
-              }}
             >
               <div className='frame'>
                 <Link to={`/profil/victor-greiveldinger`}>

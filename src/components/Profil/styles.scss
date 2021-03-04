@@ -3,6 +3,9 @@
 .thumbnail {
     overflow: hidden;
     position: relative;
+    margin: auto;
+    height: 50vh;
+    width: 524px;
     top: 8em;
 }
 
@@ -13,6 +16,7 @@
 .row-center {
     height: 100%;
     align-items: center;
+    margin: auto;
 }
 
 .image-container {
@@ -24,7 +28,6 @@
 }
 
 .information {
-    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

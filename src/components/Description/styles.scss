@@ -1,12 +1,16 @@
-.container {
+.single {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: 100vh;
 }
 
 .top {
     position: relative;
-    top: 5em;
+    height: 100%;
+    width: 100%;
 }
+
 .bottom-row {
     position: relative;
     height: 50vh;
@@ -29,7 +33,9 @@
 
 .model {
     overflow: hidden;
-    height: 5em;
+    height: 50vh;
+    text-align: center;
+    padding-top: 25vh;
 }
 
 .birth {
@@ -55,7 +61,7 @@
 
 .container-information {
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 .thumbnail-single {
@@ -83,33 +89,46 @@
     }
 }
 
-.detailed-information {
-    margin: 2em;
-    height: 100vh;
-}
-
-.title, .hero-section {
-    font-size: 36px;
-    margin: 2em 0;
-    padding: 1em;
+.container-information {
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 0 0 200vh;
+    font-size: 24px;
 }
 
 .hero-section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.small-description {
-    font-size: 24px;
-    margin: 2em;
-    text-align: right;
     position: relative;
-    width: fit-content;
+    padding: 2em;
+    width: 100%;
+    height: 100%;
 }
 
-.item-list {
-    margin: 1em;
-    font-size: 1.5em;
+.line-1, .line-2, .line-3 {
+    margin: 2em 1em 1em 1em;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.line-2 {
+    position: relative;
+    left: 6em;
+}
+
+.line-3 {
+    position: relative;
+    left: 12em;
+}
+
+.help-section {
+    white-space: nowrap;
+    font-size: 36px;
+    margin: 0 0 0 -150vw;
+    border-top: 1px white solid 100%;
+    border-bottom: 1px white solid 100%;
+    padding: 1em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: #fff;
+    -webkit-text-stroke-width: 1px;
+    text-transform: uppercase;
+    color: transparent;
 }

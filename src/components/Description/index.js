@@ -1,9 +1,12 @@
-import React, { useEffect, useState } from "react";
-import { motion, useViewportScroll, useTransform } from "framer-motion";
+import React,{ useEffect, useState, createRef } from "react";
+import { motion } from "framer-motion";
+import locomotiveScroll from "locomotive-scroll";
 import ImageProfil from 'src/assets/images/profil.jpg';
-import {imageDetails} from 'src/utils/elementsParam.js';
 import './styles.scss';
-//Components
+import './locoStyles.css';
+
+// Components
+
 import ScrollForMore from "src/components/ScrollForMore";
 import Arrow from "src/components/Arrow";
 
@@ -49,22 +52,18 @@ const letter = {
 };
 
 const Description = () => {
-  const { scrollYProgress } = useViewportScroll();
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 1.15]);
-
-  const [canScroll, setCanScroll] = useState(false);
+  const scrollRef = createRef();
 
   useEffect(() => {
-    if (canScroll === false) {
-      document.querySelector("body").classList.add("no-scroll");
-    } else {
-      document.querySelector("body").classList.remove("no-scroll");
-    }
-  }, [canScroll]);
+    const scroll = new locomotiveScroll({
+      scrollFromAnywhere: true,
+      el: scrollRef.current,
+      smooth: true,
+    });
+  });
 
   return (
     <motion.div
-      onAnimationComplete={() => setCanScroll(true)}
       className='single'
       initial='initial'
       animate='animate'
@@ -110,30 +109,23 @@ const Description = () => {
           </div>
         </div>
         <motion.div className='bottom-row'
-          initial={{opacity: 0}}
+          initial={{
+            scale: 1.1,
+            width: "524px",
+            y:"-28.5vh",
+            margin: "auto",
+          }}
           animate={{
+            scale: 1,
+            y: 0,
             width: "100%",
-            y: "36%",
             opacity: 1,
-            transition: { delay: 0.2, ...transition }
+            transition: { delay: 0.3, ...transition }
           }}
           >
           <div className='bottom'>
             <motion.div className='image-container-single'>
-              <motion.div
-                // initial={{
-                //   y: "-50%",
-                //   width: imageDetails.width,
-                //   height: imageDetails.height,
-                // }}
-                // animate={{
-                //   y: 0,
-                //   width: "100%",
-                //   height: window.innerWidth > 1440 ? 800 : 400,
-                //   transition: { delay: 0.2, ...transition },
-                // }}
-                className='thumbnail-single'
-              >
+              <motion.div className='thumbnail-single'>
                 <motion.div
                   className='frame-single'
                   whileHover='hover'
@@ -147,7 +139,6 @@ const Description = () => {
                     animate={{
                       scale: 2,
                       transition: { delay: 0.2, ...transition },
-                      y: "10vh",
                     }}
                   />
                 </motion.div>
@@ -157,38 +148,34 @@ const Description = () => {
           <ScrollForMore />
         </motion.div>
       </div>
-      <div className='detailed-information'>
-        <div className='container-information'>
+      <div className='detailed-information' >
+        <div className='container-information' ref={scrollRef}>
           <div className='row'>
             <section className="hero-section">
-              <div className="lines-container">
-                <div className="line-1">
-                  Time
+              {/* <div className="lines-container">
+                <div className="line-1" data-scroll data-scroll-speed="1">
+                    Time
+                  </div>
+                  <div className="line-2" data-scroll data-scroll-speed="6" data-scroll-direction="horizontal">
+                    to meet
+                  </div>
+                  <div className="line-3" data-scroll data-scroll-speed="15" data-scroll-direction="horizontal">
+                    a junior developper...
                 </div>
-                <div className="line-2">
-                  to meet
-                </div>
-                <div className="line-3">
-                  a junior developper...
-                </div>
+              </div> */}
+              <div className="help-section" data-scroll data-scroll-speed="25" data-scroll-direction="horizontal">
+              Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP -
               </div>
-              <div className="small-description">
-                <ul className="items">
-                  <li className="item-list">
-                    22 - 11 - 1995
-                  </li>
-                  <li className="item-list">
-                    Quasiment 1 an de pratique
-                  </li>
-                  <li className="item-list">
-                    Motivé
-                  </li>
-                  <li className="item-list">
-                    victorgreiveldinger@gmail.com
-                  </li>
-                </ul>
+              <div className="presentation" data-scroll data-scroll-speed="1">
+                Je m'appelle Victor Greiveldinger <span>&</span> j'ai récemment terminé une formation de développeur Fullstack Javascript avec une spécialité en React <span>,</span>
               </div>
-              <div>Télécharger mon CV <Arrow /></div>
+              <div className="presentation" data-scroll data-scroll-speed="1">
+                Je recherche aujourd'hui une opportunité de travail <span>Front</span> & <span>Back</span>
+              </div>
+              <div className="presentation" data-scroll data-scroll-speed="1">
+                Motivé <span>+++</span> pour travailler
+              </div>
+              <div className="cv-section" data-scroll data-scroll-speed="1">Télécharger mon CV <Arrow /></div>
             </section>
           </div>
         </div>
