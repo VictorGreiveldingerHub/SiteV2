@@ -121,7 +121,9 @@
 
 .help-section {
     white-space: nowrap;
-    font-size: 36px;
+    font-size: 46px;
+    width: fit-content;
+    letter-spacing: .5em;
     margin: 0 0 0 -150vw;
     border-top: 1px white solid 100%;
     border-bottom: 1px white solid 100%;
@@ -131,4 +133,20 @@
     -webkit-text-stroke-width: 1px;
     text-transform: uppercase;
     color: transparent;
+}
+
+.presentation-1 {
+    margin: 3em;
+    letter-spacing: 0.2em;
+    width: 50vw;
+    line-height: 1.2em;
+}
+.presentation-2 {
+    margin: 3em;
+}
+.presentation-3 {
+    margin: 3em;
+}
+.cv-section {
+    margin: 3em;
 }

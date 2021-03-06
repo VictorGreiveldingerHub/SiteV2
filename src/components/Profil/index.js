@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import ProgressiveImage from "react-progressive-image";
-import { imageDetails } from 'src/utils/elementsParam.js';
 import ImageProfil from 'src/assets/images/profil.jpg';
 import {
   pageVariants,

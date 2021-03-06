@@ -8,7 +8,6 @@ import './locoStyles.css';
 // Components
 
 import ScrollForMore from "src/components/ScrollForMore";
-import Arrow from "src/components/Arrow";
 
 
 const transition = { duration: 2, ease: [0.6, 0.01, -0.05, 0.9] };
@@ -152,30 +151,23 @@ const Description = () => {
         <div className='container-information' ref={scrollRef}>
           <div className='row'>
             <section className="hero-section">
-              {/* <div className="lines-container">
-                <div className="line-1" data-scroll data-scroll-speed="1">
-                    Time
-                  </div>
-                  <div className="line-2" data-scroll data-scroll-speed="6" data-scroll-direction="horizontal">
-                    to meet
-                  </div>
-                  <div className="line-3" data-scroll data-scroll-speed="15" data-scroll-direction="horizontal">
-                    a junior developper...
-                </div>
-              </div> */}
-              <div className="help-section" data-scroll data-scroll-speed="25" data-scroll-direction="horizontal">
-              Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP -
+              <div
+                className="help-section"
+                data-scroll data-scroll-speed="40"
+                data-scroll-direction="horizontal"
+              >
+              Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP -
               </div>
-              <div className="presentation" data-scroll data-scroll-speed="1">
-                Je m'appelle Victor Greiveldinger <span>&</span> j'ai récemment terminé une formation de développeur Fullstack Javascript avec une spécialité en React <span>,</span>
+              <div className="presentation-1" data-scroll data-scroll-speed="5" data-scroll-direction="horizontal">
+                Je m'appelle Victor Greiveldinger <span>&</span> j'ai récemment terminé une formation de développeur Fullstack <span>Javascript</span> avec une spécialité en <span>R</span>eact
               </div>
-              <div className="presentation" data-scroll data-scroll-speed="1">
+              <div className="presentation-2" data-scroll data-scroll-speed="1" data-scroll-direction="vertical">
                 Je recherche aujourd'hui une opportunité de travail <span>Front</span> & <span>Back</span>
               </div>
-              <div className="presentation" data-scroll data-scroll-speed="1">
+              <div className="presentation-3" data-scroll data-scroll-speed="15" data-scroll-direction="horizontal">
                 Motivé <span>+++</span> pour travailler
               </div>
-              <div className="cv-section" data-scroll data-scroll-speed="1">Télécharger mon CV <Arrow /></div>
+              <button className="cv-section" data-scroll data-scroll-speed="1">Télécharger mon CV</button>
             </section>
           </div>
         </div>
