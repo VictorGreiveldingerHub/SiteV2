@@ -48,8 +48,10 @@
   },
   "dependencies": {
     "@react-three/drei": "^3.8.6",
+    "axios": "^0.21.1",
     "framer-motion": "^3.3.0",
     "gsap": "^3.6.0",
+    "http-proxy-middleware": "^1.0.6",
     "lerp": "^1.0.3",
     "locomotive-scroll": "^4.1.0",
     "prop-types": "*",

@@ -7,6 +7,8 @@ import { motion } from 'framer-motion';
 
 // Import Composants / fichiers
 import MenuSvg from 'src/assets/images/menu.svg';
+import Linkedin from 'src/assets/images/linkedin.svg';
+import Github from 'src/assets/images/github.svg';
 
 // Import styles
 import './styles.scss';
@@ -76,7 +78,7 @@ const MenuNav = () => {
                    
                     {/** Partie droite */}
                     <div className="contact-zone">
-                        Linkedin
+                        Linkedin Github Mail
                     </div>
                 </motion.div>
             )}

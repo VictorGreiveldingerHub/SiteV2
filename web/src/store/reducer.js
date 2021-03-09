@@ -2,6 +2,7 @@ const initialState = {
   name: 'Victor Greiveldinger',
   displayMenu: false,
   rectangleValue: true,
+  data: null,
   navigation: [
     {
       id: 1,

@@ -36,7 +36,6 @@ export const imageVariants = {
   in: {
     opacity: 1,
     x: 0,
-    delay: 4,
   },
   out: {
     opacity: 0,
@@ -45,13 +44,14 @@ export const imageVariants = {
 };
 
 export const imageTransition = {
-  ease: "easeIn",
+  ease: "easeOut",
+  delay: 1,
 };
 
 export const pageTransition = {
   type: "tween",
   ease: [0.6, 0.01, -0.05, 0.9],
-  duration: 1,
+  duration: 0.5,
 };
 
 export const pageStyle = {
@@ -59,7 +59,7 @@ export const pageStyle = {
 };
 
 export const transition = {
-  duration: 9,
+  duration: 2,
   ease: [0.6, 0.01, -0.05, 0.9],
 };
 

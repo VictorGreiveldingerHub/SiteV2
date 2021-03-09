@@ -25,39 +25,34 @@ const Acceuil = () => {
     useEffect(() => {
         setTimeout(() => {
             dispatch({ type: 'HIDE_RECTANGLE'})
-        }, 5200
+        }, 4200
         );
     });
 
     return (
         <div>
-            <motion.div className="acceuil-container" initial="initial"
-                animate= "in"
-                exit="out"
-                variants={imageVariants}
-                transition={imageTransition}
-            />
             <motion.div
                 className="lastname"
+                initial={{ x: 0}}
                 animate={{ x: 100}}
-                transition={{ ease: "easeIn", delay: 0.2 }}
+                transition={{ delay: 0.2 }}
             >Greiveldinger</motion.div>
             <motion.div
                 className="firstname"
                 animate={{y : -100}}
-                transition={{ ease: "easeIn", delay: 0.2 }}
+                transition={{ ease: "easeIn", delay: 0.6 }}
             >
                 Victor
             </motion.div>
             <motion.div
                 className="line-disapear"
                 animate={{width : "0%"}}
-                transition={{ ease: "easeOut", delay: 0.2 }}
+                transition={{ ease: "easeOut", delay: 0.7 }}
             />
             <motion.div
                 className="line-display"
                 animate={{width : "3.5vw"}}
-                transition={{ ease: "easeIn", delay: 0.2 }}
+                transition={{ ease: "easeIn", delay: 0.7 }}
             />
             <motion.div
                 className="info"
@@ -78,7 +73,7 @@ const Acceuil = () => {
                     left: "-6vw",
                 }}
                 animate={{width : "5vw"}}
-                transition={{ ease: "easeIn", delay: 0.2 }}
+                transition={{ ease: "easeIn", delay: 0.5 }}
             />
             </div>
             { rectangleValue && (
@@ -90,7 +85,15 @@ const Acceuil = () => {
             )}
             { !rectangleValue && (
                 <>
-                <motion.div className="nbr-folio" variants={rectangleDisapear} initial="hidden" animate="visible">002</motion.div>
+                <motion.div
+                className="acceuil-container"
+                initial="initial"
+                animate= "in"
+                exit="out"
+                variants={imageVariants}
+                transition={imageTransition}
+            />
+                <motion.div className="nbr-folio" variants={rectangleDisapear}>002</motion.div>
                 <MenuNav />
                 <motion.div className="contact" >contact</motion.div>
                 <motion.div className="localisation">
