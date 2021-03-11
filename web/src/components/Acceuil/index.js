@@ -6,7 +6,6 @@ import { motion } from 'framer-motion';
 // Import d'éléments annexes
 import MenuNav from 'src/components/MenuNav';
 import {
-    variants,
     rectangleDisapear,
     imageTransition,
     imageVariants
@@ -14,6 +13,12 @@ import {
 
 // Import Styles
 import './styles.scss';
+
+
+const rectanglesTransition = {
+    ease: [0.6, 0.01, -0.05, 0.9],
+    delay: 2,
+};
 
 const Acceuil = () => {
 
@@ -32,8 +37,15 @@ const Acceuil = () => {
     return (
         <div>
             <motion.div
+                className="acceuil-container"
+                initial="initial"
+                animate= "in"
+                exit="out"
+                variants={imageVariants}
+                transition={imageTransition}
+            />
+            <motion.div
                 className="lastname"
-                initial={{ x: 0}}
                 animate={{ x: 100}}
                 transition={{ delay: 0.2 }}
             >Greiveldinger</motion.div>
@@ -58,7 +70,7 @@ const Acceuil = () => {
                 className="info"
                 initial="hidden"
                 animate="visible"
-                variants={variants}
+                variants={rectangleDisapear}
             >developpeur junior</motion.div>
             <motion.div className="web-mobile">web & web mobile</motion.div>
             <div className="folio">
@@ -77,22 +89,14 @@ const Acceuil = () => {
             />
             </div>
             { rectangleValue && (
-                <motion.div variants={rectangleDisapear} initial="hidden" animate="visible">
-                    <motion.div className="rectangle-1"  animate={{width: "20vw", x: 250}} transition={{ease: "easeIn", duration: 1 ,delay: 1}}/>
-                    <motion.div className="rectangle-2"  animate={{width: "20vw", x: 250}} transition={{ease: "easeIn", duration: 1 ,delay: 2}}/>
-                    <motion.div className="rectangle-3"  animate={{width: "20vw", x: 250}} transition={{ease: "easeIn", duration: 1 ,delay: 3}}/>
-                </motion.div>   
+                <div>
+                    <motion.div className="rectangle-1" animate={{width: 10, x: 20}} transition={rectanglesTransition}/>
+                    <motion.div className="rectangle-2" animate={{width: 10, x: 20}} transition={rectanglesTransition}/>
+                    <motion.div className="rectangle-3" animate={{width: 10, x: 20}} transition={rectanglesTransition}/>
+                </div>   
             )}
             { !rectangleValue && (
                 <>
-                <motion.div
-                className="acceuil-container"
-                initial="initial"
-                animate= "in"
-                exit="out"
-                variants={imageVariants}
-                transition={imageTransition}
-            />
                 <motion.div className="nbr-folio" variants={rectangleDisapear}>002</motion.div>
                 <MenuNav />
                 <motion.div className="contact" >contact</motion.div>

@@ -1,6 +1,5 @@
 // == Import npm
 import React from 'react';
-import { useSelector } from 'react-redux';
 import {
   Switch,
   Route,
@@ -14,7 +13,7 @@ import Acceuil from 'src/components/Acceuil';
 import Profil from 'src/components/Profil';
 import Description from 'src/components/Description';
 import Skills from 'src/components/Skills';
-import Works from 'src/components/Works';
+// import Works from 'src/components/Works';
 import Contact from 'src/components/Contact';
 import MenuNav from 'src/components/MenuNav';
 // == Import
@@ -26,15 +25,15 @@ const App = () => {
 
   return (
     <div className="app">
-      <AnimatePresence exitBeforeEnter initial={false}>
+      <AnimatePresence exitBeforeEnter nitial={false}>
         <MenuNav />
         <Switch location={location} key={location.pathname}>
-          <Route exact path="/" component={Acceuil} />
-          <Route exact path="/profil" component={() => <Profil />} />
-          <Route exact path="/profil/victor-greiveldinger" component={() => <Description />} />
-          <Route exact path="/skills" component={Skills} />
-          <Route exact path="/works" component={Works} />
-          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/"><Acceuil /></Route>
+          <Route exact path="/profil"><Profil /></Route>
+          <Route exact path="/profil/victor-greiveldinger"><Description /></Route>
+          <Route exact path="/skills"><Skills /></Route>
+          {/* <Route exact path="/works"><Works /></Route> */}
+          <Route exact path="/contact"><Contact /></Route>
         </Switch>
       </AnimatePresence>
     </div>

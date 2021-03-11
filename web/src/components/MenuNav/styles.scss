@@ -177,3 +177,122 @@
     height: 100%;
     background-color: #ffffff;
 };
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    /* CSS */
+    .item {
+        width: 50%;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    /* CSS */
+    .backdrop {
+        flex-direction: column;
+    }
+    .cls-button {
+        width: 100%;
+    }
+    .contact-zone {
+        width: 100%;
+        padding: 20vh 0;
+    }
+    .list {
+        flex-wrap: nowrap;
+    }
+    .item {
+        width: 60%;
+        font-size: 10px;
+    }
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    /* CSS */
+    .backdrop {
+        flex-direction: column;
+    }
+    .cls-button {
+        width: 100%;
+    }
+    .contact-zone {
+        width: 100%;
+    }
+    .item {
+        width: 100%;
+    }
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    /* CSS */
+    .backdrop {
+        flex-direction: column;
+    }
+    .cls-button {
+        width: 100%;
+    }
+    .contact-zone {
+        width: 100%;
+    }
+    .item {
+        width: 100%;
+    }
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    /* CSS */
+    .backdrop {
+        flex-direction: column;
+    }
+    .cls-button {
+        width: 100%;
+    }
+    .contact-zone {
+        width: 100%;
+    }
+    .item {
+        width: 100%;
+        font-size: 11px;
+    }
+  }

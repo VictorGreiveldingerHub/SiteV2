@@ -1,9 +1,9 @@
 // Rassembler ici tous les objets parametre du site pour éviter d'emcombrer le state de l'app.
 
-export const variants = {
-  visible: { opacity: 1 },
-  hidden: { opacity: 0 },
-};
+// export const variants = {
+//   visible: { opacity: 1 },
+//   hidden: { opacity: 0 },
+// };
 
 export const rectangleDisapear = {
   visible: {opacity: 1},
@@ -45,7 +45,7 @@ export const imageVariants = {
 
 export const imageTransition = {
   ease: "easeOut",
-  delay: 1,
+  delay: 2.5,
 };
 
 export const pageTransition = {

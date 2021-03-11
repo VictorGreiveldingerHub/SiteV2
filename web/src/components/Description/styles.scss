@@ -104,21 +104,6 @@
     height: 100%;
 }
 
-.line-1, .line-2, .line-3 {
-    margin: 2em 1em 1em 1em;
-    text-transform: uppercase;
-    font-size: 30px;
-}
-.line-2 {
-    position: relative;
-    left: 6em;
-}
-
-.line-3 {
-    position: relative;
-    left: 12em;
-}
-
 .help-section {
     white-space: nowrap;
     font-size: 46px;
@@ -135,18 +120,23 @@
     color: transparent;
 }
 
-.presentation-1 {
-    margin: 3em;
+.presentation-section {
+    margin: auto;
+    height: 100%;
+}
+
+.presentation-1, .presentation-2 {
+    margin: 3em 0 0 0;
     letter-spacing: 0.2em;
-    width: 50vw;
     line-height: 1.2em;
+
+    & span {
+        font-size: larger;
+        font-weight: bold;
+        text-decoration-line: underline;
+    }
 }
-.presentation-2 {
-    margin: 3em;
-}
-.presentation-3 {
-    margin: 3em;
-}
+
 .cv-section {
-    margin: 3em;
+    margin: 0em auto;
 }
