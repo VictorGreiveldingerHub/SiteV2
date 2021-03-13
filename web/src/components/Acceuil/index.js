@@ -15,9 +15,17 @@ import {
 import './styles.scss';
 
 
-const rectanglesTransition = {
-    ease: [0.6, 0.01, -0.05, 0.9],
+const rectanglesTransition1 = {
+    ease: "easeIn",
+    delay: 1,
+};
+const rectanglesTransition2 = {
+    ease: [0.1, 2, 1.5, .6],
     delay: 2,
+};
+const rectanglesTransition3 = {
+    ease: [0.1, 0.9, 0.1, 0.9],
+    delay: 3,
 };
 
 const Acceuil = () => {
@@ -90,9 +98,9 @@ const Acceuil = () => {
             </div>
             { rectangleValue && (
                 <div>
-                    <motion.div className="rectangle-1" animate={{width: 10, x: 20}} transition={rectanglesTransition}/>
-                    <motion.div className="rectangle-2" animate={{width: 10, x: 20}} transition={rectanglesTransition}/>
-                    <motion.div className="rectangle-3" animate={{width: 10, x: 20}} transition={rectanglesTransition}/>
+                    <motion.div className="rectangle-1" animate={{width: 100, x: 200}} transition={rectanglesTransition1}/>
+                    <motion.div className="rectangle-2" animate={{width: 100, x: 200}} transition={rectanglesTransition2}/>
+                    <motion.div className="rectangle-3" animate={{width: 100, x: 200}} transition={rectanglesTransition3}/>
                 </div>   
             )}
             { !rectangleValue && (
