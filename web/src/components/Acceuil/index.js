@@ -17,15 +17,23 @@ import './styles.scss';
 
 const rectanglesTransition1 = {
     ease: "easeIn",
-    delay: 1,
+    delay: 0,
+    duration: 2,
+    // times: [0, 1]
 };
 const rectanglesTransition2 = {
-    ease: [0.1, 2, 1.5, .6],
-    delay: 2,
+    type: "spring",
+    //ease: "easeIn",
+    delay: 1,
+    duration: 2,
+    //times: [1, 2]
 };
 const rectanglesTransition3 = {
-    ease: [0.1, 0.9, 0.1, 0.9],
-    delay: 3,
+    type: "spring",
+    //ease: "easeIn",
+    delay: 2,
+    duration: 2,
+    //times: [2, 3]
 };
 
 const Acceuil = () => {
@@ -38,7 +46,7 @@ const Acceuil = () => {
     useEffect(() => {
         setTimeout(() => {
             dispatch({ type: 'HIDE_RECTANGLE'})
-        }, 4200
+        }, 5200
         );
     });
 
@@ -98,14 +106,14 @@ const Acceuil = () => {
             </div>
             { rectangleValue && (
                 <div>
-                    <motion.div className="rectangle-1" animate={{width: 100, x: 200}} transition={rectanglesTransition1}/>
-                    <motion.div className="rectangle-2" animate={{width: 100, x: 200}} transition={rectanglesTransition2}/>
-                    <motion.div className="rectangle-3" animate={{width: 100, x: 200}} transition={rectanglesTransition3}/>
+                    <motion.div className="rectangle-1" animate={{width: [0, 100, 200], x: [0, 300]}} transition={rectanglesTransition1}/>
+                    <motion.div className="rectangle-2" animate={{width: [0, 100, 200], x: [0, 300]}} transition={rectanglesTransition2}/>
+                    <motion.div className="rectangle-3" animate={{width: [0, 100, 200], x: [0, 300]}} transition={rectanglesTransition3}/>
                 </div>   
             )}
             { !rectangleValue && (
                 <>
-                <motion.div className="nbr-folio" variants={rectangleDisapear}>002</motion.div>
+                <motion.div className="nbr-folio" variants={rectangleDisapear} initial={{opacisty: 0}} animate={{ opacity: 1}}>002</motion.div>
                 <MenuNav />
                 <motion.div className="contact" >contact</motion.div>
                 <motion.div className="localisation">
@@ -116,14 +124,6 @@ const Acceuil = () => {
                 <motion.div className="year" >2021</motion.div>
                 </>
             )}
-            {/* <div className="fast-summary">
-                <ul className="list-fast-summary">
-                    <li className="item-fast-summary">Intro</li>
-                    <li className="item-fast-summary">Profil</li>
-                    <li className="item-fast-summary">Works</li>
-                    <li className="item-fast-summary">Compétences</li>
-                </ul>
-            </div> */}
         </div>
     );
 };

@@ -45,13 +45,13 @@ export const imageVariants = {
 
 export const imageTransition = {
   ease: "easeOut",
-  delay: 2.5,
+  delay: 5.2,
 };
 
 export const pageTransition = {
   type: "tween",
   ease: [0.6, 0.01, -0.05, 0.9],
-  duration: 0.5,
+  duration: 1,
 };
 
 export const pageStyle = {
