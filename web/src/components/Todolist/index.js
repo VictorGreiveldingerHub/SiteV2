@@ -9,6 +9,7 @@ import Counter from './Counter';
 const Todolist = () => {
 
     const [tasks, setTasks] = useState(initialTasks);
+    const [newTaskText, setNewTaskText] = useState("");
 
     const tasksCounter = tasks.filter((task) => {
         console.log(!task.done);
@@ -24,9 +25,35 @@ const Todolist = () => {
         setTasks(newTasks);
     };
 
+    const addTask = () => {
+        // Calcul d'un id pour la nouvelle tâche
+        const taskIds = tasks.map((task) => task.id);
+
+        const maxId = Math.max(...taskIds);
+        const id = maxId + 1;
+        // const id = (Math.max(...taskIds)) + 1;
+    
+        // Modélisation de la nouvelle tâche
+        const taskToAdd = {
+          id,
+          text: newTaskText,
+          done: false,
+        };
+        const newTasks = [...tasks, taskToAdd];
+    
+        // MÀJ du state de l'élément React
+        setTasks(newTasks);
+        // On vide l'input du formulaire
+        setNewTaskText('');
+    };
+
     return (
         <div>
-            <Form />
+            <Form
+                text={newTaskText}
+                addTask={addTask}
+                updateText={setNewTaskText}
+            />
             <Counter tasksCounter={tasksCounter}/>
             <List tasks={tasks} handleCheckboxChange={handleCheckboxChange}/>
         </div>

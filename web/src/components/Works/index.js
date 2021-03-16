@@ -22,50 +22,46 @@ const Works = () => {
             transition={pageTransition}
         >
             <section className="projets">
-                <div>
-                    <h3>React Todolist</h3>
+                <div className="info-div">
+                    <h3 className="info-div-h3">React Todolist</h3>
                     <section>
-                        Notions : useState, séparation des composants, (pas d'utilisation de Redux pour cet exemple) mais passage de props. 
-                    <a href="https://github.com/VictorGreiveldingerHub/TodoListReact" target="no_blank">Le code sur Github</a>
+                        Notions : useState, séparation des composants, (pas d'utilisation de Redux pour cet exemple) mais passage de props.
                     </section>
                 </div>
-                <div>
+                <div className="app-div">
                     <Todolist />
                 </div>
             </section>
             <section className="projets">
-                <div>
-                    <h3>React Github API</h3>
+                <div className="info-div">
+                    <h3 className="info-div-h3">React Github API</h3>
                     <section>
                         Notions (gauche):
-                    <a>Le code sur Github</a>
                     </section>
                 </div>
-                <div>
+                <div className="app-div">
                     <GithubAPI />
                 </div>
             </section>
             <section className="projets">
-                <div>
-                    <h3>Gradient de couleur</h3>
+                <div className="info-div">
+                    <h3 className="info-div-h3">Gradient de couleur</h3>
                     <section>
                         Notions (droite):
-                    <a>Le code sur Github</a>
                     </section>
                 </div>
-                <div>
+                <div className="app-div">
                     <Gradient />
                 </div>
             </section>
             <section className="projets">
-                <div>
-                    <h3>Chatroom</h3>
+                <div className="info-div">
+                    <h3 className="info-div-h3">Chatroom</h3>
                     <section>
                         Notions (gauche):
-                    <a>Le code sur Github</a>
                     </section>
                 </div>
-                <div>
+                <div className="app-div">
                     <Chatroom />
                 </div>
             </section>
@@ -74,30 +70,27 @@ const Works = () => {
                     <h3>Letter Boxed (si j'ai le temps</h3>
                     <section>
                         Notions (gauche):
-                    <a>Le code sur Github</a>
                     </section>
                 </div>
                 <div>L'application fonctionnelle sur le coté</div>
             </section> */}
             <section className="projets">
-                <div>
-                    <h3>Portfolio V1</h3>
+                <div className="info-div">
+                    <h3 className="info-div-h3">Portfolio V1</h3>
                     <section>
                         Notions (gauche):
-                    <a>Le code sur Github</a>
                     </section>
                 </div>
-                <div>L'application fonctionnelle sur le coté lien vers le site</div>
+                <div className="app-div">L'application fonctionnelle sur le coté lien vers le site</div>
             </section>
             <section className="projets">
-                <div>
-                    <h3>Portfolio v2</h3>
+                <div className="info-div">
+                    <h3 className="info-div-h3">Portfolio v2</h3>
                     <section>
                         Notions (droite):
-                    <a>Le code sur Github</a>
                     </section>
                 </div>
-                <div>L'application fonctionnelle sur le coté</div>
+                <div className="app-div">L'application fonctionnelle sur le coté</div>
             </section>
         </motion.div>
     );

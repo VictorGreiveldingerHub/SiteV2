@@ -1,11 +1,16 @@
 import React from 'react';
+import './styles.scss';
 
 const List = ({tasks, handleCheckboxChange}) => {
     const tasksJSX = tasks.map((t) => {
         return (
-            <li key={t.id}>
+            <li
+                key={t.id}
+                className="todo-li"
+            >
                 <input 
                     type="checkbox"
+                    className="todo-list-input"
                     onChange={() => {handleCheckboxChange(t.id)}}
                     checked={t.done}
                 />
@@ -14,7 +19,7 @@ const List = ({tasks, handleCheckboxChange}) => {
         )
     })
     return (
-        <ul>
+        <ul className="todo-ul">
             {tasksJSX}
         </ul>
     );

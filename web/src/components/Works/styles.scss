@@ -4,13 +4,18 @@ works-content {
 }
 
 .projets:nth-child(1n) {
-    background-color: rgb(238, 238, 216);
-    color: rgb(51, 51, 51);
+    flex-direction: row;
 }
 
 .projets:nth-child(2n) {
     background-color: rgb(51, 51, 51);
     color: rgb(238, 238, 216);
+    flex-direction: row-reverse;
+}
+
+.app-div {
+    background-color: rgb(238, 238, 216);
+    color: rgb(51, 51, 51);
 }
 
 .projets {
@@ -21,6 +26,17 @@ works-content {
 
     & div {
         flex: 1;
-        margin: auto;
     }
+}
+
+.info-div {
+    background-color: rgb(51, 51, 51);
+    color: rgb(238, 238, 216);
+}
+
+.info-div-h3 {
+    margin: 2em;
+    font-size: 26px;
+    font-weight: bold;
+
 }
