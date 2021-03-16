@@ -50,12 +50,19 @@
 }
 
 .skills-div {
-    z-index: 1;
+    overflow: hidden;
     flex: 2;
     white-space: pre-wrap;
+    line-height: 1.1em;
+    letter-spacing: .1em;
 
     & div {
         margin: 1.5em;
+    }
+
+    & h4 {
+        font-weight: bolder;
+        text-decoration: overline;
     }
 }
 

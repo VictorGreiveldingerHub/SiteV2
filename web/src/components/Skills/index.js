@@ -4,6 +4,7 @@ import { pageVariants, pageTransition } from 'src/utils/elementsParam.js';
 
 import './styles.scss';
 
+
 const Skills = () => {
     return (
         <motion.div
@@ -28,13 +29,13 @@ const Skills = () => {
                         Grâce aux nombreux ateliers à chaque fin de cours, nous étions libre de travailler en équipe, avec Discord et LiveShare de VsCode.
                     </div>
                     <div>
-                        Le tout pour nous imprégner le plus possible avec la notion de méthode Agile SCRUM, que nous aurons tous exploiter lors de notre projet de fin d'étude (en groupe de 4).
+                        Le tout pour nous imprégner le plus possible avec la notion de méthode Agile SCRUM, que nous aurons tous exploiter lors de notre projet de fin d'étude.
                     </div>
                     <div>
                         Gestion de projet avec conception d'un cahier des charges, de base de donnée, user stories, wireframes, MVC (Model-View-Controller) sont des notions familiaire
                     </div>
                     <div>
-                        <h3>Suite à la formation</h3>
+                        <h4>Suite à la formation</h4>
                         <div>
                             Opquast
                         </div>
@@ -62,6 +63,12 @@ const Skills = () => {
                             Apprentissage de ThreeJs, React Three Fiber, WebGl, framer-motion, Locomotive-Scroll ... 
                         </div>
                     </div>
+                    <div>
+                        <h4>A venir</h4>
+                        <div>
+                            Apprentissage de AngularJs
+                        </div>
+                    </div>
                 </div>
             </section>
             <section className="backend-section">
@@ -80,9 +87,6 @@ const Skills = () => {
                         </div>
                     </div>
                 </div>
-            </section>
-            <section>
-                N'hésitez pas à regarder plus en détail ma formation BOUTON 
             </section>
         </div>
         </motion.div>

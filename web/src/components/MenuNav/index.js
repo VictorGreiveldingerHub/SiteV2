@@ -3,12 +3,11 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 
 // Import Composants / fichiers
 import MenuSvg from 'src/assets/images/menu.svg';
-import Linkedin from 'src/assets/images/linkedin.svg';
-import Github from 'src/assets/images/github.svg';
 
 // Import styles
 import './styles.scss';
@@ -78,7 +77,9 @@ const MenuNav = () => {
                    
                     {/** Partie droite */}
                     <div className="contact-zone">
-                        Linkedin Github Mail
+                        <a href="https://www.linkedin.com/in/victorgreiveldinger/" target="no_blank">Linkedin</a>
+                        <a href="https://github.com/VictorGreiveldingerHub" target="no_blank">Github</a>
+                        <Link to="/contact">victorgreiveldinger@gmail.com</Link>
                     </div>
                 </motion.div>
             )}

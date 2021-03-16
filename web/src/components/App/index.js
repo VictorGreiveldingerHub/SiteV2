@@ -13,7 +13,7 @@ import Acceuil from 'src/components/Acceuil';
 import Profil from 'src/components/Profil';
 import Description from 'src/components/Description';
 import Skills from 'src/components/Skills';
-// import Works from 'src/components/Works';
+import Works from 'src/components/Works';
 import Contact from 'src/components/Contact';
 import MenuNav from 'src/components/MenuNav';
 // == Import
@@ -32,7 +32,7 @@ const App = () => {
           <Route exact path="/profil"><Profil /></Route>
           <Route exact path="/profil/victor-greiveldinger"><Description /></Route>
           <Route exact path="/skills"><Skills /></Route>
-          {/* <Route exact path="/works"><Works /></Route> */}
+          <Route exact path="/works"><Works /></Route>
           <Route exact path="/contact"><Contact /></Route>
         </Switch>
       </AnimatePresence>

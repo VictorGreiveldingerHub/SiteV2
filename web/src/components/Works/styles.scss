@@ -1,0 +1,26 @@
+works-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.projets:nth-child(1n) {
+    background-color: rgb(238, 238, 216);
+    color: rgb(51, 51, 51);
+}
+
+.projets:nth-child(2n) {
+    background-color: rgb(51, 51, 51);
+    color: rgb(238, 238, 216);
+}
+
+.projets {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+
+    & div {
+        flex: 1;
+        margin: auto;
+    }
+}

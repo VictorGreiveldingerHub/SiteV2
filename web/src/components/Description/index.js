@@ -159,11 +159,21 @@ const Description = () => {
               Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP -
               </div>
               <section className="presentation-section">
-                <div className="presentation-1" data-scroll data-scroll-speed="3" data-scroll-direction="vertical">
+                <div className="presentation-1" data-scroll data-scroll-speed="5" data-scroll-direction="vertical">
                   Je m'appelle Victor Greiveldinger & j'ai récemment terminé une formation de développeur Fullstack Javascript avec une spécialité en React. Je recherche aujourd'hui une <span>opportunité de travail</span> en tant que stagiaire ou développeur Junior à Metz et au Luxembourg.
                 </div>
-                <div className="presentation-2" data-scroll data-scroll-speed="2" data-scroll-direction="vertical">
-                  Par la suite je veux devenir un bon développeur Front & Back en maitrisant plusieurs technologies, mon prochain objectif est d'apprendre à utiliser <span>ThreeJs, Gsap et WebGl</span>, PHP & Angular.
+                <div className="container-personnal">
+                  <div className="personnals" data-scroll data-scroll-speed="2" data-scroll-direction="horizontal">
+                    22-11-1995
+                  </div>
+                  <div className="personnals" data-scroll data-scroll-speed="3" data-scroll-direction="horizontal">
+                    <span>Metz - Luxembourg <br/></span>
+                    <span>Permis B</span>
+                  </div>
+                  <div className="personnals" data-scroll data-scroll-speed="4" data-scroll-direction="horizontal">
+                    <span>Français : maternelle <br/></span>
+                    <span>Anglais : Niveau B2</span> 
+                  </div>
                 </div>
               </section>
             </section>

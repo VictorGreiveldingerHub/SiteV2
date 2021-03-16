@@ -125,10 +125,10 @@
     height: 100%;
 }
 
-.presentation-1, .presentation-2 {
+.presentation-1 {
     margin: 3em 0 0 0;
-    letter-spacing: 0.2em;
-    line-height: 1.2em;
+    letter-spacing: 0.1em;
+    line-height: 1.1em;
 
     & span {
         font-size: larger;
@@ -137,6 +137,13 @@
     }
 }
 
-.cv-section {
-    margin: 0em auto;
+.container-personnal {
+    display: flex;
+    flex-direction: row;
+}
+
+.personnals {
+    flex: 1;
+    padding: 2em;
+    font-weight: lighter;
 }
