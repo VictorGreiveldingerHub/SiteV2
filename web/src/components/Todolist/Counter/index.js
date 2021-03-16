@@ -1,9 +1,7 @@
 import React from 'react';
 
-const Counter = ({tasks}) => {
-    const tasksCounter = tasks.filter((task) => {
-        return !task.done;
-    }).lenght;
+const Counter = ({tasksCounter}) => {
+    console.log(tasksCounter);
     return (
         <div>{tasksCounter} tâche à faire</div>
     );

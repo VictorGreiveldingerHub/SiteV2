@@ -1,14 +1,15 @@
 import React from 'react';
 
-const List = ({tasks}) => {
-    const tasksJSX = tasks.map((task) => {
+const List = ({tasks, handleCheckboxChange}) => {
+    const tasksJSX = tasks.map((t) => {
         return (
-            <li key={task.id}>
+            <li key={t.id}>
                 <input 
                     type="checkbox"
-                    checked={task.done}
+                    onChange={handleCheckboxChange}
+                    checked={t.done}
                 />
-                <span>{task.text}</span>
+                <span>{t.text}</span>
             </li>
         )
     })
