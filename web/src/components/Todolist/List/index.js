@@ -6,7 +6,7 @@ const List = ({tasks, handleCheckboxChange}) => {
             <li key={t.id}>
                 <input 
                     type="checkbox"
-                    onChange={handleCheckboxChange}
+                    onChange={() => {handleCheckboxChange(t.id)}}
                     checked={t.done}
                 />
                 <span>{t.text}</span>

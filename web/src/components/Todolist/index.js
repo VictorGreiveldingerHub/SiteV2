@@ -15,12 +15,20 @@ const Todolist = () => {
         return !task.done;
     }).length;
 
-    console.log(tasksCounter)
+    const handleCheckboxChange = (taskId) => {
+        const newTasks = tasks.map((task) => {
+          const taskCopy = { ...task };
+          if (taskCopy.id === taskId) taskCopy.done = !taskCopy.done;
+          return taskCopy;
+        });
+        setTasks(newTasks);
+    };
+
     return (
         <div>
             <Form />
             <Counter tasksCounter={tasksCounter}/>
-            {/* <List tasks={task} handleCheckboxChange={handleCheckboxChange}/> */}
+            <List tasks={tasks} handleCheckboxChange={handleCheckboxChange}/>
         </div>
     );
 };
