@@ -25,7 +25,7 @@ const Works = () => {
                 <div className="info-div">
                     <h3 className="info-div-h3">React Todolist</h3>
                     <section>
-                        Notions : useState, séparation des composants, (pas d'utilisation de Redux pour cet exemple) mais passage de props.
+                        Notions : useState, séparation des composants, (pas d'utilisation de Redux pour cet exemple) mais passage de props et gestions des props (PropTypes).
                     </section>
                 </div>
                 <div className="app-div">
@@ -36,7 +36,7 @@ const Works = () => {
                 <div className="info-div">
                     <h3 className="info-div-h3">React Github API</h3>
                     <section>
-                        Notions (gauche):
+                        Notions : requête à une API, utilisation d'axios, useReducer, useEffect.
                     </section>
                 </div>
                 <div className="app-div">
@@ -47,7 +47,7 @@ const Works = () => {
                 <div className="info-div">
                     <h3 className="info-div-h3">Gradient de couleur</h3>
                     <section>
-                        Notions (droite):
+                        Notions :
                     </section>
                 </div>
                 <div className="app-div">
@@ -58,7 +58,7 @@ const Works = () => {
                 <div className="info-div">
                     <h3 className="info-div-h3">Chatroom</h3>
                     <section>
-                        Notions (gauche):
+                        Notions :
                     </section>
                 </div>
                 <div className="app-div">

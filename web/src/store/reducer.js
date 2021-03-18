@@ -3,6 +3,12 @@ const initialState = {
   displayMenu: false,
   rectangleValue: true,
   data: null,
+  gradient: {
+    firstColor: '#e367a4',
+    lastColor: '#48b1f3',
+    direction: '90deg',
+    nbColors: 2,
+  },
   navigation: [
     {
       id: 1,

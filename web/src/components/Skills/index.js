@@ -83,7 +83,7 @@ const Skills = () => {
                     <div>
                         <h4>A venir</h4>
                         <div>
-                            Apprentissage de PHP
+                            Apprentissage de PHP, Hapi
                         </div>
                     </div>
                 </div>
