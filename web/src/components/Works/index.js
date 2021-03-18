@@ -47,7 +47,7 @@ const Works = () => {
                 <div className="info-div">
                     <h3 className="info-div-h3">Gradient de couleur</h3>
                     <section>
-                        Notions :
+                        Notions : utilisation de Redux, un store, un reducer, useSelector, useDispatch, actions 
                     </section>
                 </div>
                 <div className="app-div">
@@ -58,7 +58,7 @@ const Works = () => {
                 <div className="info-div">
                     <h3 className="info-div-h3">Chatroom</h3>
                     <section>
-                        Notions :
+                        Notions : A venir
                     </section>
                 </div>
                 <div className="app-div">
@@ -78,7 +78,7 @@ const Works = () => {
                 <div className="info-div">
                     <h3 className="info-div-h3">Portfolio V1</h3>
                     <section>
-                        Notions (gauche):
+                        Notions : Utilisation d'un framework CSS avec Semantic-ui-react
                     </section>
                 </div>
                 <div className="app-div">L'application fonctionnelle sur le coté lien vers le site</div>
@@ -87,7 +87,7 @@ const Works = () => {
                 <div className="info-div">
                     <h3 className="info-div-h3">Portfolio v2</h3>
                     <section>
-                        Notions (droite):
+                        Notions : Sans Framework css, mise en place manuelle de toute l'architecture du site, CSS / JSX 
                     </section>
                 </div>
                 <div className="app-div">L'application fonctionnelle sur le coté</div>

@@ -5,17 +5,14 @@ works-content {
 
 .projets:nth-child(1n) {
     flex-direction: row;
+    background-color: rgb(238, 238, 216);
+    color: rgb(51, 51, 51);
 }
 
 .projets:nth-child(2n) {
     background-color: rgb(51, 51, 51);
     color: rgb(238, 238, 216);
     flex-direction: row-reverse;
-}
-
-.info-div {
-    background-color: rgb(238, 238, 216);
-    color: rgb(51, 51, 51);
 }
 
 .projets {
@@ -30,8 +27,6 @@ works-content {
 }
 
 .app-div {
-    background-color: rgb(51, 51, 51);
-    color: rgb(238, 238, 216);
     overflow: scroll;
 }
 

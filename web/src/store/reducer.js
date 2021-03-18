@@ -1,14 +1,14 @@
+import { randomHexColor } from '../utils/random';
+
 const initialState = {
   name: 'Victor Greiveldinger',
   displayMenu: false,
   rectangleValue: true,
   data: null,
-  gradient: {
-    firstColor: '#e367a4',
-    lastColor: '#48b1f3',
-    direction: '90deg',
-    nbColors: 2,
-  },
+  firstColor: '#e367a4',
+  lastColor: '#48b1f3',
+  direction: '90deg',
+  nbColors: 0,
   navigation: [
     {
       id: 1,
@@ -59,6 +59,7 @@ const initialState = {
 
 export default (state = initialState, action = {}) => {
   switch (action.type) {
+    // MENU ACCEUIL 
     case 'DISPLAY_MENU': {
       return {
         ...state,
@@ -75,6 +76,20 @@ export default (state = initialState, action = {}) => {
       return {
         ...state,
         rectangleValue: false,
+      }
+    }
+    case 'RANDOM_FIRST': {
+      return {
+        ...state,
+        firstColor: randomHexColor(),
+        nbColors: state.nbColors + 1,
+      }
+    }
+    case 'RANDOM_LAST': {
+      return {
+        ...state,
+        lastColor: randomHexColor(),
+        nbColors: state.nbColors + 1,
       }
     }
     default: {

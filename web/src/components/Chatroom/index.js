@@ -3,7 +3,7 @@ import React from 'react';
 const Chatroom = () => {
     return (
         <div>
-            Chatroom
+            A venir ...
         </div>
     );
 };

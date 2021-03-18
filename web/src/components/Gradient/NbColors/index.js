@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 
 const NbColors = () => {
-    const nbColors = useSelector((state) => state.gradient).nbColors;
+    const nbColors = useSelector((state) => state.nbColors);
     
     let sentence = `couleur généré`;
     if (nbColors > 1) {
