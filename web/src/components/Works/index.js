@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { pageVariants, pageTransition } from 'src/utils/elementsParam.js';
 
+import Portfolio1 from '../../assets/images/portfoliov1.png';
 import './styles.scss';
 
 // Imports Composants
@@ -81,7 +82,13 @@ const Works = () => {
                         Notions : Utilisation d'un framework CSS avec Semantic-ui-react
                     </section>
                 </div>
-                <div className="app-div">L'application fonctionnelle sur le coté lien vers le site</div>
+                <div className="app-div">
+                    <img
+                        className="image-site1"
+                        src={Portfolio1}
+                        alt="site web"
+                    />
+                </div>
             </section>
             <section className="projets">
                 <div className="info-div">

@@ -92,6 +92,18 @@ export default (state = initialState, action = {}) => {
         nbColors: state.nbColors + 1,
       }
     }
+    case 'CHANGE_DIRECTION_TO_RIGHT': {
+      return {
+        ...state,
+        direction: '90deg',
+      };
+    }
+    case 'CHANGE_DIRECTION_TO_LEFT': {
+      return {
+        ...state,
+        direction: '270deg',
+      };
+    }
     default: {
       return state;
     }
