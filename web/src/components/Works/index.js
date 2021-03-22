@@ -26,7 +26,8 @@ const Works = () => {
                 <div className="info-div">
                     <h3 className="info-div-h3">React Todolist</h3>
                     <section>
-                        Notions : useState, séparation des composants, (pas d'utilisation de Redux pour cet exemple) mais passage de props et gestions des props (PropTypes).
+                        <h4 className="notions">Notions</h4>
+                        <div className="notions-div">useState, séparation des composants, (pas d'utilisation de Redux pour cet exemple) mais passage de props et gestion des props (PropTypes).</div>
                     </section>
                 </div>
                 <div className="app-div">
@@ -37,7 +38,8 @@ const Works = () => {
                 <div className="info-div">
                     <h3 className="info-div-h3">React Github API</h3>
                     <section>
-                        Notions : requête à une API, utilisation d'axios, useReducer, useEffect.
+                    <h4 className="notions">Notions</h4>
+                    <div className="notions-div">requête à une API, utilisation d'axios, useReducer, useEffect.</div>
                     </section>
                 </div>
                 <div className="app-div">
@@ -48,7 +50,8 @@ const Works = () => {
                 <div className="info-div">
                     <h3 className="info-div-h3">Gradient de couleur</h3>
                     <section>
-                        Notions : utilisation de Redux, un store, un reducer, useSelector, useDispatch, actions 
+                    <h4 className="notions">Notions</h4>
+                    <div className="notions-div">utilisation de Redux, un store, un reducer, useSelector, useDispatch, actions </div>
                     </section>
                 </div>
                 <div className="app-div">
@@ -59,11 +62,12 @@ const Works = () => {
                 <div className="info-div">
                     <h3 className="info-div-h3">Chatroom</h3>
                     <section>
-                        Notions : A venir
+                    <h4 className="notions">Notions</h4>
+                    <div className="notions-div">WebSocket</div>
                     </section>
                 </div>
                 <div className="app-div">
-                    <Chatroom />
+                    {/* <Chatroom /> */}
                 </div>
             </section>
             {/* <section className="projets">
@@ -75,11 +79,14 @@ const Works = () => {
                 </div>
                 <div>L'application fonctionnelle sur le coté</div>
             </section> */}
-            <section className="projets">
+            {/* <section className="projets">
                 <div className="info-div">
                     <h3 className="info-div-h3">Portfolio V1</h3>
                     <section>
-                        Notions : Utilisation d'un framework CSS avec Semantic-ui-react
+                    <h4 className="notions">Notions</h4>
+                        <div className="notions-div">
+                            Utilisation d'un framework CSS (Semantic-ui-react), déploiement sur O2Switch, JSX, 
+                        </div>
                     </section>
                 </div>
                 <div className="app-div">
@@ -89,15 +96,18 @@ const Works = () => {
                         alt="site web"
                     />
                 </div>
-            </section>
+            </section> */}
             <section className="projets">
                 <div className="info-div">
                     <h3 className="info-div-h3">Portfolio v2</h3>
                     <section>
-                        Notions : Sans Framework css, mise en place manuelle de toute l'architecture du site, CSS / JSX 
+                    <h4 className="notions">Notions</h4> 
+                    <div className="notions-div">Sans Framework css, mise en place manuelle de toute l'architecture du site, CSS / JSX </div>
                     </section>
                 </div>
-                <div className="app-div">L'application fonctionnelle sur le coté</div>
+                <div className="app-div">
+
+                </div>
             </section>
         </motion.div>
     );

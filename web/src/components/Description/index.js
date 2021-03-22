@@ -108,12 +108,12 @@ const Description = () => {
           </div>
         </div>
         <motion.div className='bottom-row'
-          initial={{
-            scale: 1.1,
-            width: "524px",
-            y:"-28.5vh",
-            margin: "auto",
-          }}
+          // initial={{
+          //   scale: 1.1,
+          //   width: "524px",
+          //   y:"-28.5vh",
+          //   margin: "auto",
+          // }}
           animate={{
             scale: 1,
             y: 0,
@@ -153,7 +153,8 @@ const Description = () => {
             <section className="hero-section">
               <div
                 className="help-section"
-                data-scroll data-scroll-speed="40"
+                data-scroll
+                data-scroll-speed="40"
                 data-scroll-direction="horizontal"
               >
               Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP -

@@ -70,3 +70,201 @@
     writing-mode: vertical-rl;
     text-orientation: mixed;
 }
+
+// /* 
+//     ##Device = Tablets, Ipads (portrait)
+//     ##Screen = B/w 768px to 1024px
+//   */
+  
+//   @media (min-width: 1281px) {
+    
+//     /* CSS */
+//     .thumbnail {
+//         overflow: hidden;
+//         position: relative;
+//         margin: auto;
+//         height: 100vh;
+//         width: 624px;
+//         top: 7em;
+//     }
+    
+//     .container {
+//         position: relative;
+//     }
+    
+//     .row-center {
+//         height: 100%;
+//         align-items: center;
+//         margin: auto;
+//     }
+    
+//     .image-container {
+//         position: relative;
+//     }
+    
+//     .frame img {
+//         width: 100%;
+//     }
+    
+//     .information {
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: space-between;
+//         top: 3vh;
+//         left: 12vw;
+//         position: relative;
+//         font-size: .9em;
+//     }
+    
+//     .title-name {
+//         position: relative;
+//     }
+    
+//     .caracteristique {
+//         position: relative;
+//         left: -15vw;
+//     }
+//   }
+  
+//   /* 
+//     ##Device = Tablets, Ipads (landscape)
+//   */
+  
+//   @media (min-width: 767px) and (max-width: 1280px) {
+    
+//     /* CSS */
+//     .thumbnail {
+//         overflow: hidden;
+//         position: relative;
+//         margin: auto;
+//         height: 100vh;
+//         width: 524px;
+//         top: 7em;
+//     }
+    
+//     .container {
+//         position: relative;
+//     }
+    
+//     .row-center {
+//         height: 100%;
+//         align-items: center;
+//         margin: auto;
+//     }
+    
+//     .image-container {
+//         position: relative;
+//     }
+    
+//     .frame img {
+//         width: 100%;
+//     }
+    
+//     .information {
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: space-between;
+//         top: 3vh;
+//         left: 12vw;
+//         position: relative;
+//         font-size: .9em;
+//     }
+    
+//     .title-name {
+//         position: relative;
+//     }
+    
+//     .caracteristique {
+//         position: relative;
+//         left: -15vw;
+//     }
+//   }
+  
+//   /* 
+//     ##Device = Low Resolution Tablets, Mobiles (Landscape)
+//     ##Screen = B/w 481px to 767px
+//   */
+  
+//   @media (min-width: 541px) and (max-width: 766px) {
+    
+//     /* CSS */
+//     .thumbnail {
+//         overflow: hidden;
+//         position: relative;
+//         margin: auto;
+//         height: 100vh;
+//         width: 424px;
+//         top: 7em;
+//     }
+    
+//     .container {
+//         position: relative;
+//     }
+    
+//     .row-center {
+//         height: 100%;
+//         align-items: center;
+//         margin: auto;
+//     }
+    
+//     .image-container {
+//         position: relative;
+//     }
+    
+//     .frame img {
+//         width: 100%;
+//     }
+    
+//     .information {
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: space-between;
+//         top: 3vh;
+//         left: 12vw;
+//         position: relative;
+//         font-size: .9em;
+//     }
+    
+//     .title-name {
+//         position: relative;
+//     }
+    
+//     .caracteristique {
+//         position: relative;
+//         left: -15vw;
+//     }
+//   }
+
+@media (min-width: 360px) and (max-width: 540px) {
+    .global-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(238, 238, 216);
+        color: rgb(51, 51, 51);
+        justify-content: center;
+        align-items: center;
+    }
+    .frontend-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(51, 51, 51);
+        color: rgb(238, 238, 216);
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .backend-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(238, 238, 216);
+        color: rgb(51, 51, 51);
+        justify-content: center;
+        align-items: center;
+    }
+}

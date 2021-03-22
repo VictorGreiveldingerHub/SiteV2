@@ -14,7 +14,7 @@ const List = ({tasks, handleCheckboxChange}) => {
                     onChange={() => {handleCheckboxChange(t.id)}}
                     checked={t.done}
                 />
-                <span>{t.text}</span>
+                <span className="todo-span">{t.text}</span>
             </li>
         )
     })

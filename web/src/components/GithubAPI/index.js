@@ -2,6 +2,7 @@ import React, { useEffect, useReducer } from 'react';
 import axios from 'axios';
 import githubLogo from '../../assets/images/GitHub-Mark.png';
 import { cleanRepos } from '../../utils/api';
+import './styles.scss'
 
 import Search from './Search';
 
@@ -70,7 +71,7 @@ const GithubAPI = () => {
 
     return (
         <div className="github-section">
-            <img alt="GitHub Logo" src={githubLogo} style={{ width: "70px"}}/>
+            <img alt="GitHub Logo" src={githubLogo} className="github-image"/>
             <Search
                 value={state.query}
                 handleChange={handleChange}

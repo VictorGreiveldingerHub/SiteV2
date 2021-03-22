@@ -9,9 +9,9 @@ const Repositories = ({ image, title, orga, description }) => {
         <div className="content-repos">
             <h3 className="title-repos">{title}</h3>
             <div className="date-repos">
-                <span className="date">{orga}</span>
+                <span className="date">Organisation : {orga}</span>
             </div>
-            <div className="description-repos">{description}</div>
+            <div className="description-repos">Description : {description}</div>
         </div>
     </div>
   );

@@ -21,9 +21,6 @@ works-content {
     display: flex;
     flex-direction: row;
 
-    & div {
-        flex: 1;
-    }
 }
 
 .app-div {
@@ -34,4 +31,156 @@ works-content {
     margin: 2em;
     font-size: 26px;
     font-weight: bold;
+}
+
+  
+  @media (min-width: 1281px) {
+    
+    /* CSS */
+    .projets:nth-child(1n) {
+        flex-direction: row;
+        background-color: rgb(238, 238, 216);
+        color: rgb(51, 51, 51);
+    }
+
+    .projets:nth-child(2n) {
+        background-color: rgb(51, 51, 51);
+        color: rgb(238, 238, 216);
+        flex-direction: row-reverse;
+    }
+
+    .info-div {
+        margin: 5em 4em 4em 5em;
+        flex: 1;
+    }
+
+    .notions {
+        position: absolute;
+        writing-mode: tb-rl;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 1.3em;
+    }
+
+    .notions-div {
+        margin-left: 2em;
+    }
+
+    .app-div {
+        margin: 2em auto;
+        flex: 1;
+    }
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 767px) and (max-width: 1280px) {
+    
+    /* CSS */
+    .projets:nth-child(1n) {
+        flex-direction: row;
+        background-color: rgb(238, 238, 216);
+        color: rgb(51, 51, 51);
+    }
+
+    .projets:nth-child(2n) {
+        background-color: rgb(51, 51, 51);
+        color: rgb(238, 238, 216);
+        flex-direction: row-reverse;
+    }
+
+    .info-div {
+        margin: 2em;
+        flex: 1;
+    }
+
+    .notions {
+        position: absolute;
+        writing-mode: tb-rl;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 1.3em;
+    }
+
+    .notions-div {
+        margin-left: 2em;
+    }
+
+    .app-div {
+        margin: 2em auto;
+        flex: 1;
+    }
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 541px) and (max-width: 766px) {
+    
+    /* CSS */
+    .projets:nth-child(1n) {
+        flex-direction: column;
+        background-color: rgb(238, 238, 216);
+        color: rgb(51, 51, 51);
+    }
+
+    .projets:nth-child(2n) {
+        background-color: rgb(51, 51, 51);
+        color: rgb(238, 238, 216);
+        flex-direction: column;
+    }
+
+    .info-div {
+        margin: 2em;
+        text-align: center;
+
+    }
+    .notions {
+        font-weight: bolder;
+        letter-spacing: 0.1em;
+    }
+
+    .notions-div {
+        margin-top: 2em;
+    }
+
+    .app-div {
+        margin: 1em auto;
+    }
+  }
+
+@media (min-width: 360px) and (max-width: 540px) {
+    .projets:nth-child(1n) {
+        flex-direction: column;
+        background-color: rgb(238, 238, 216);
+        color: rgb(51, 51, 51);
+    }
+
+    .projets:nth-child(2n) {
+        background-color: rgb(51, 51, 51);
+        color: rgb(238, 238, 216);
+        flex-direction: column;
+    }
+
+    .info-div {
+        margin: 2em;
+        text-align: center;
+    }
+    .notions {
+        font-weight: bolder;
+        letter-spacing: 0.1em;
+    }
+
+    .notions-div {
+        margin-top: 2em;
+    }
+
+    .app-div {
+        margin: 1em auto;
+    }
 }

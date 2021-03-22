@@ -11,7 +11,7 @@ export default [
     },
     {
         id: 2,
-        text: 'Trouver un travail au Luxembourg ou à Metz',
+        text: 'Trouver un travail',
         done: false,
     },
     {

@@ -1,0 +1,138 @@
+.title-repos {
+    font-size: larger;
+    font-weight: bolder;
+    text-decoration: underline;
+    margin-bottom: 0.2em;
+};
+.date, .description-repos {
+    margin: .2em;
+}
+@media (min-width: 360px) and (max-width: 540px) {
+    .github-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .github-image {
+        margin: auto;
+        width: 25%;
+    }
+
+    .search-input {
+        width: 100%;
+        padding: .5em;
+        text-align: center;
+        margin: .3em 0;
+    }
+
+    .search-result {
+        margin: 1em auto;
+    }
+
+    .number-result {
+        font-size: larger;
+        font-weight: 900;
+        letter-spacing: .1em;
+        text-decoration: underline;
+    }
+}
+
+@media (min-width: 541px) and (max-width: 766px) {
+    .github-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .github-image {
+        margin: auto;
+        width: 25%;
+    }
+
+    .search-input {
+        width: 75%;
+        padding: .5em;
+        text-align: center;
+        margin: .3em;
+    }
+
+    .search-section {
+        text-align: center;
+    }
+
+    .search-result {
+        margin: 1.6em auto;
+    }
+
+    .number-result {
+        font-size: larger;
+        font-weight: 900;
+        letter-spacing: .1em;
+        text-decoration: underline;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1280px) {
+    .github-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .github-image {
+        margin: auto;
+        width: 25%;
+    }
+    .search-input {
+        width: 50%;
+        padding: .5em;
+        text-align: center;
+        margin: .3em;
+    }
+
+    .search-section {
+        text-align: center;
+    }
+
+    .search-result {
+        margin: 1.2em auto;
+    }
+
+    .number-result {
+        font-size: larger;
+        font-weight: 900;
+        letter-spacing: .1em;
+        text-decoration: underline;
+    }
+}
+
+@media (min-width: 1281px) {
+    .github-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .github-image {
+        margin: auto;
+        width: 25%;
+    }
+    .search-input {
+        width: 50%;
+        padding: .5em;
+        text-align: center;
+        margin: .3em;
+    }
+
+    .search-section {
+        text-align: center;
+    }
+
+    .search-result {
+        margin: 1.2em auto;
+    }
+
+    .number-result {
+        font-size: larger;
+        font-weight: 900;
+        letter-spacing: .1em;
+        text-decoration: underline;
+    }
+}

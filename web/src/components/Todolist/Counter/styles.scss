@@ -1,3 +1,27 @@
 .todo-counter {
-    margin: 1em;
+    letter-spacing: .1em;
+    text-decoration: underline;
+}
+@media (min-width: 360px) and (max-width: 540px) {
+    .todo-counter {
+        margin: 1em;
+    }
+}
+
+@media (min-width: 541px) and (max-width: 766px) {
+    .todo-counter {
+        margin: 1.5em;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1280px) {
+    .todo-counter {
+        margin: 2em;
+    }
+}
+
+@media (min-width: 1281px) {
+    .todo-counter {
+        margin: 2.5em;
+    }
 }

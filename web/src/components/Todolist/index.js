@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './styles.scss';
 
 import initialTasks from './task';
 
@@ -48,7 +49,7 @@ const Todolist = () => {
     };
 
     return (
-        <div>
+        <div className="todolist">
             <Form
                 text={newTaskText}
                 addTask={addTask}

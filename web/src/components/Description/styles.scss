@@ -147,3 +147,99 @@
     padding: 2em;
     font-weight: lighter;
 }
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+@media (min-width: 1281px) {
+    
+    /* CSS */
+    .bottom-row {
+        position: relative;
+        height: 50vh;
+        width: 724px;
+        margin: auto;
+    }
+}
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+  */
+  
+@media (min-width: 767px) and (max-width: 1280px) {
+    
+    /* CSS */
+    .bottom-row {
+        position: relative;
+        height: 50vh;
+        width: 524px;
+        margin: auto;
+    }
+}
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+@media (min-width: 541px) and (max-width: 766px) {
+    
+    /* CSS */
+    .bottom-row {
+        position: relative;
+        height: 50vh;
+        width: 324px;
+        margin: auto;
+    }
+    .span-first {
+        font-size: 45px;
+    }
+    .first {
+        margin-right: 20px;
+    }
+    .model {
+        height: 50vh;
+        padding-top: 35vh;
+    }
+
+    .container-information {
+        height: fit-content;
+        padding: 0;
+    }
+
+    .help-section {
+        margin: 0 0 0 -21.5em;
+        font-size: 29px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 540px) {
+    .bottom-row {
+        position: relative;
+        height: 50vh;
+        width: 324px;
+        margin: auto;
+    }
+    .span-first {
+        font-size: 35px;
+    }
+    .first {
+        margin-right: 40px;
+    }
+    .model {
+        height: 50vh;
+        padding-top: 35vh;
+    }
+
+    .container-information {
+        height: fit-content;
+        padding: 0;
+    }
+
+    .help-section {
+        margin: 0 0 0 -21.5em;
+        font-size: 22px;
+    }
+}

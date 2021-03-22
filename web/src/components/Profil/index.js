@@ -46,8 +46,6 @@ const Profil = ({image}) => {
                     )}
                   </ProgressiveImage>
                 </Link>
-              </div>
-            </div>
             <motion.div
               exit={{ opacity: 0 }}
               transition={transition}
@@ -57,6 +55,8 @@ const Profil = ({image}) => {
                 Développeur Junior
               </div>
             </motion.div>
+              </div>
+            </div>
           </div>
         </div>
       </motion.div>

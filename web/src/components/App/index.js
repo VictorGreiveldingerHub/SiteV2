@@ -25,7 +25,7 @@ const App = () => {
 
   return (
     <div className="app">
-      <AnimatePresence exitBeforeEnter nitial={false}>
+      <AnimatePresence exitBeforeEnter initial={false}>
         <MenuNav />
         <Switch location={location} key={location.pathname}>
           <Route exact path="/"><Acceuil /></Route>

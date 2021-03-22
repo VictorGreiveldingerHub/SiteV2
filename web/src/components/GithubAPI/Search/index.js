@@ -10,9 +10,10 @@ const Search = ({
   }) => {
     return (
         <>
-        <form onSubmit={handleSubmit}>
-        <section>
+        <form onSubmit={handleSubmit} className="search-form">
+        <section className="search-section">
           <input
+            className="search-input"
             loading={loading}
             placeholder="Recherche..."
             value={value} // forçage de l'affichage de la valeur
@@ -20,7 +21,7 @@ const Search = ({
           />
         </section>
       </form>
-      <div>Votre recherche a donnée {message} résultats</div>
+      <div className="search-result">Votre recherche a donnée <span className="number-result">{message}</span> résultats</div>
       </>
     );
 };

@@ -176,38 +176,26 @@
     width: 20%;
     height: 100%;
     background-color: #ffffff;
+
+    & a:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 1px;
+        left: 50%;
+        position: relative;
+        background: rgb(51, 51, 51);
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0; 
+    }
+
+    & a:hover:after {
+        width: 100%;
+        left: 0;
+    }
 };
 
-// /* 
-//   ##Device = Desktops
-//   ##Screen = 1281px to higher resolution desktops
-// */
-
-// @media (min-width: 1281px) {
-  
-//     /* CSS */
-    
-//   }
-  
-//   /* 
-//     ##Device = Laptops, Desktops
-//     ##Screen = B/w 1025px to 1280px
-//   */
-  
-//   @media (min-width: 1025px) and (max-width: 1280px) {
-    
-//     /* CSS */
-
-//     .contact-zone {
-//         width: 24%;
-//     }
-
-//     .item {
-//         width: 60%;
-//     }
-    
-//   }
-  
   /* 
     ##Device = Tablets, Ipads (portrait)
     ##Screen = B/w 768px to 1024px
@@ -216,6 +204,12 @@
   @media (min-width: 1281px) {
     
     /* CSS */
+    .label {
+        font-size: 4em;
+    }
+    .anime-text {
+        font-size: 4em;
+    }
   }
   
   /* 
