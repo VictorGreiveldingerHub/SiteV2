@@ -47,13 +47,13 @@ const Acceuil = () => {
     });
 
     return (
-        <div>
+        <div style={{height: "100vh"}}>
             <motion.div
                 className="acceuil-container"
                 initial="initial"
                 animate= "in"
                 exit={{
-                    transition: .2,
+                    transition: .5,
                 }}
                 variants={imageVariants}
                 transition={imageTransition}
@@ -62,24 +62,25 @@ const Acceuil = () => {
                 className="lastname"
                 animate={{ x: 100}}
                 transition={{ delay: 1.5 }}
-            >Greiveldinger</motion.div>
+            > Greiveldinger
+                <motion.div
+                    className="line-disapear"
+                    animate={{width : "0%"}}
+                    transition={{ ease: "easeOut", delay: 2.5, duration: 1 }}
+                />
+            </motion.div>
             <motion.div
                 className="firstname"
                 animate={{y : -100}}
                 transition={{ ease: "easeIn", delay: 1.5 }}
             >
                 Victor
+                <motion.div
+                    className="line-display"
+                    animate={{width : "20%"}}
+                    transition={{ ease: "easeIn", delay: 2.5, duration: 1 }}
+                />
             </motion.div>
-            <motion.div
-                className="line-disapear"
-                animate={{width : "0%"}}
-                transition={{ ease: "easeOut", delay: 2.5, duration: 1 }}
-            />
-            <motion.div
-                className="line-display"
-                animate={{width : "3.5vw"}}
-                transition={{ ease: "easeIn", delay: 2.5, duration: 1 }}
-            />
             <motion.div
                 className="info"
                 initial="hidden"
@@ -107,17 +108,20 @@ const Acceuil = () => {
             >
                 folio
                 <motion.div
-                style={{
-                    position: "absolute",
-                    opacity: "0.7",
-                    height: "2px",
-                    background: "rgb(53, 53, 53)",
-                    top: "1.3vh",
-                    left: "-6vw",
-                }}
-                animate={{width : "5vw"}}
-                transition={{ ease: "easeIn", delay: 0.5, duration: 2 }}
-            />
+                    className="line-folio"
+                    animate={{width : "4em"}}
+                    transition={{ ease: "easeIn", delay: 0.5, duration: 2 }}
+                />
+                { !rectangleValue && (
+                    <motion.div
+                        className="nbr-folio"
+                        variants={rectangleDisapear}
+                        initial={{opacity: 0}}
+                        animate={{ opacity: 1}}
+                    >
+                        002
+                    </motion.div>  
+                )}
             </motion.div>
             { rectangleValue && (
                 <div>
@@ -128,16 +132,10 @@ const Acceuil = () => {
             )}
             { !rectangleValue && (
                 <>
-                <motion.div className="nbr-folio" variants={rectangleDisapear} initial={{opacity: 0}} animate={{ opacity: 1}}>002</motion.div>
-                <MenuNav />
-                <motion.div className="contact" variants={rectangleDisapear} initial={{opacity: 0}} animate={{ opacity: 1}}>
-                    <Link to="/contact">contact</Link>
-                </motion.div>
-                <motion.div className="localisation" variants={rectangleDisapear} initial={{opacity: 0}} animate={{ opacity: 1}}>
-                    <div>Metz</div>
-                    <div>france</div>
-                </motion.div>
-                <motion.div className="year" variants={rectangleDisapear} initial={{opacity: 0}} animate={{ opacity: 1}}>2021</motion.div>
+                    <motion.div className="contact" variants={rectangleDisapear} initial={{opacity: 0}} animate={{ opacity: 1}}>
+                        <Link to="/contact">contact</Link>
+                    </motion.div>
+                    <motion.div className="year" variants={rectangleDisapear} initial={{opacity: 0}} animate={{ opacity: 1}}>2021</motion.div>
                 </>
             )}
         </div>
