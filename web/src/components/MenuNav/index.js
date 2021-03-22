@@ -79,7 +79,7 @@ const MenuNav = () => {
                     <div className="contact-zone">
                         <a href="https://www.linkedin.com/in/victorgreiveldinger/" target="no_blank">Linkedin</a>
                         <a href="https://github.com/VictorGreiveldingerHub" target="no_blank">Github</a>
-                        <Link to="/contact">victorgreiveldinger@gmail.com</Link>
+                        <Link to="/contact" style={{fontSize: "smaller"}}>victorgreiveldinger@gmail.com</Link>
                     </div>
                 </motion.div>
             )}

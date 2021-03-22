@@ -178,64 +178,44 @@
     background-color: #ffffff;
 };
 
-/* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
+// /* 
+//   ##Device = Desktops
+//   ##Screen = 1281px to higher resolution desktops
+// */
 
-@media (min-width: 1281px) {
+// @media (min-width: 1281px) {
   
-    /* CSS */
+//     /* CSS */
     
-  }
+//   }
   
-  /* 
-    ##Device = Laptops, Desktops
-    ##Screen = B/w 1025px to 1280px
-  */
+//   /* 
+//     ##Device = Laptops, Desktops
+//     ##Screen = B/w 1025px to 1280px
+//   */
   
-  @media (min-width: 1025px) and (max-width: 1280px) {
+//   @media (min-width: 1025px) and (max-width: 1280px) {
     
-    /* CSS */
+//     /* CSS */
 
-    .contact-zone {
-        width: 24%;
-    }
+//     .contact-zone {
+//         width: 24%;
+//     }
 
-    .item {
-        width: 60%;
-    }
+//     .item {
+//         width: 60%;
+//     }
     
-  }
+//   }
   
   /* 
     ##Device = Tablets, Ipads (portrait)
     ##Screen = B/w 768px to 1024px
   */
   
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 1281px) {
     
     /* CSS */
-    .backdrop {
-        flex-direction: column;
-    }
-    .cls-button {
-        width: 100%;
-    }
-    .contact-zone {
-        width: 100%;
-        padding: 20vh 0;
-    }
-    .list {
-        flex-wrap: nowrap;
-    }
-    .item {
-        width: 60%;
-        font-size: 10px;
-    }
-    .partie-centrale {
-        width: 100%;
-    }
   }
   
   /* 
@@ -243,20 +223,20 @@
     ##Screen = B/w 768px to 1024px
   */
   
-  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  @media (min-width: 767px) and (max-width: 1280px) {
     
     /* CSS */
-    .backdrop {
-        flex-direction: column;
-    }
-    .cls-button {
-        width: 100%;
+    .item {
+        width: 50%;
     }
     .contact-zone {
-        width: 100%;
+        width: 25%;
     }
-    .item {
-        width: 100%;
+    .label {
+        font-size: 2em;
+    }
+    .anime-text {
+        font-size: 2em;
     }
   }
   
@@ -265,7 +245,7 @@
     ##Screen = B/w 481px to 767px
   */
   
-  @media (min-width: 481px) and (max-width: 767px) {
+  @media (min-width: 541px) and (max-width: 766px) {
     
     /* CSS */
     .backdrop {
@@ -273,36 +253,32 @@
     }
     .cls-button {
         width: 100%;
+        height: 20%;
     }
     .contact-zone {
         width: 100%;
-        padding: 0;
+        padding: 20px;
     }
     .item {
         width: 100%;
+        margin: 10px 0;
     }
   }
-  
-  /* 
-    ##Device = Most of the Smartphones Mobiles (Portrait)
-    ##Screen = B/w 320px to 479px
-  */
-  
-  @media (min-width: 320px) and (max-width: 480px) {
-    
-    /* CSS */
+
+@media (min-width: 360px) and (max-width: 540px) {
     .backdrop {
         flex-direction: column;
     }
     .cls-button {
         width: 100%;
+        height: 10%;
     }
     .contact-zone {
         width: 100%;
-        padding: 0;
+        padding: 20px;
     }
     .item {
         width: 100%;
         font-size: 11px;
     }
-  }
+}
