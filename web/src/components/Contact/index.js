@@ -1,29 +1,19 @@
-import React, { useState, createRef, useEffect } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import { motion } from 'framer-motion';
-import locomotiveScroll from "locomotive-scroll";
 
 // Import Perso
 import { pageVariants, pageTransition } from 'src/utils/elementsParam.js';
-import 'src/components/Description/locoStyles.css';
 import './styles.scss';
 
 const Contact = () => {
 
+    // Pour l'envoie de mail 
     const [prenom, setPrenom] = useState('');
     const [nom, setNom] = useState('');
     const [mail, setMail] = useState('');
     const [message, setMessage] = useState('');
-    const scrollRef = createRef();
 
-    
-    useEffect(() => {
-        const scroll = new locomotiveScroll({
-        scrollFromAnywhere: true,
-        el: scrollRef.current,
-        smooth: true,
-        });
-    });
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -36,9 +26,6 @@ const Contact = () => {
         };
         // Test de l'objet reçu
         console.log(newMessage);
-
-        axios.post("http://localhost:8080/contact", newMessage);
-
     };
 
     return (
@@ -48,14 +35,13 @@ const Contact = () => {
             animate= "in"
             exit="out"
             variants={pageVariants}
-            transition={pageTransition}
-        >
-            <div ref={scrollRef}>
+            transition={pageTransition}>
+            <div>
                 <div className="title">Parlons ensemble.</div>
                 <div className="title-contact">CONTACT</div>
                 <div className="formulaire">
                     <form onSubmit={handleSubmit}>
-                        <div className="input-field" data-scroll data-scroll-speed="1.5">
+                        <div className="input-field">
                             <div className="form-field-line" />
                             <div className="form-field-line-complete" />
                             <label className="form-label">Prénom</label>
@@ -66,9 +52,9 @@ const Contact = () => {
                                 placeholder="Votre prénom"
                                 onChange={(e) => setPrenom(e.target.value)}
                                 value={prenom}
-                            ></input>
+                            />
                         </div>
-                        <div className="input-field" data-scroll data-scroll-speed="2">
+                        <div className="input-field">
                         <div className="form-field-line" />
                             <div className="form-field-line-complete" />
                             <label className="form-label">Nom</label>
@@ -79,9 +65,9 @@ const Contact = () => {
                                 placeholder="Votre nom"
                                 onChange={(e) => setNom(e.target.value)}
                                 value={nom}
-                            ></input>
+                            />
                         </div>
-                        <div className="input-field" data-scroll data-scroll-speed="2.5">
+                        <div className="input-field">
                         <div className="form-field-line" />
                             <div className="form-field-line-complete" />
                             <label className="form-label">Email</label>
@@ -92,9 +78,9 @@ const Contact = () => {
                                 placeholder="Votre email"
                                 onChange={(e) => setMail(e.target.value)}
                                 value={mail}
-                            ></input>
+                            />
                         </div>
-                        <div className="textarea-wrap" data-scroll data-scroll-speed="3">
+                        <div className="textarea-wrap">
                             <label className="form-label">Message</label>
                             <div className="textarea-line"/>
                             <textarea
@@ -103,9 +89,9 @@ const Contact = () => {
                                 placeholder="Votre message"
                                 onChange={(e) => setMessage(e.target.value)}
                                 value={message}
-                            ></textarea>
+                            />
                         </div>
-                        <div className="submit-container" data-scroll data-scroll-speed="3.5">
+                        <div className="submit-container">
                             <button className="button-submit" type="submit">Envoyer</button>
                         </div>
                     </form>

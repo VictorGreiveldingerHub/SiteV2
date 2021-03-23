@@ -17,7 +17,7 @@ import store from 'src/store';
 const rootReactElement = (
   <Router>
     <Provider store={store}>
-      <App />
+        <App />
     </Provider>
   </Router>
 );

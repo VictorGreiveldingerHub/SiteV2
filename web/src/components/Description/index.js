@@ -1,9 +1,7 @@
-import React,{ useEffect, useState, createRef } from "react";
+import React from "react";
 import { motion } from "framer-motion";
-import locomotiveScroll from "locomotive-scroll";
 import ImageProfil from 'src/assets/images/profil.jpg';
 import './styles.scss';
-import './locoStyles.css';
 
 // Components
 
@@ -51,16 +49,6 @@ const letter = {
 };
 
 const Description = () => {
-  const scrollRef = createRef();
-
-  useEffect(() => {
-    const scroll = new locomotiveScroll({
-      scrollFromAnywhere: true,
-      el: scrollRef.current,
-      smooth: true,
-    });
-  });
-
   return (
     <motion.div
       className='single'
@@ -108,12 +96,12 @@ const Description = () => {
           </div>
         </div>
         <motion.div className='bottom-row'
-          // initial={{
-          //   scale: 1.1,
-          //   width: "524px",
-          //   y:"-28.5vh",
-          //   margin: "auto",
-          // }}
+          initial={{
+            scale: 1,
+            width: "524px",
+            y:"-27.5vh",
+            margin: "auto",
+          }}
           animate={{
             scale: 1,
             y: 0,
@@ -147,31 +135,29 @@ const Description = () => {
           <ScrollForMore />
         </motion.div>
       </div>
-      <div className='detailed-information' >
-        <div className='container-information' ref={scrollRef}>
+      {/* <div className='detailed-information' >
+        <div className='container-information'>
           <div className='row'>
             <section className="hero-section">
               <div
                 className="help-section"
-                data-scroll
-                data-scroll-speed="40"
-                data-scroll-direction="horizontal"
+                
               >
               Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP -
               </div>
               <section className="presentation-section">
-                <div className="presentation-1" data-scroll data-scroll-speed="5" data-scroll-direction="vertical">
+                <div className="presentation-1">
                   Je m'appelle Victor Greiveldinger & j'ai récemment terminé une formation de développeur Fullstack Javascript avec une spécialité en React. Je recherche aujourd'hui une <span>opportunité de travail</span> en tant que stagiaire ou développeur Junior à Metz et au Luxembourg.
                 </div>
                 <div className="container-personnal">
-                  <div className="personnals" data-scroll data-scroll-speed="2" data-scroll-direction="horizontal">
+                  <div className="personnals" >
                     22-11-1995
                   </div>
-                  <div className="personnals" data-scroll data-scroll-speed="3" data-scroll-direction="horizontal">
+                  <div className="personnals">
                     <span>Metz - Luxembourg <br/></span>
                     <span>Permis B</span>
                   </div>
-                  <div className="personnals" data-scroll data-scroll-speed="4" data-scroll-direction="horizontal">
+                  <div className="personnals">
                     <span>Français : maternelle <br/></span>
                     <span>Anglais : Niveau B2</span> 
                   </div>
@@ -179,8 +165,9 @@ const Description = () => {
               </section>
             </section>
           </div>
-        </div>
-      </div>
+          
+        </div> 
+      </div>*/}
     </motion.div>
   );
 };

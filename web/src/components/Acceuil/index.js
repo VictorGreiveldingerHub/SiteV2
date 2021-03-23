@@ -5,7 +5,6 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 // Import d'éléments annexes
-import MenuNav from 'src/components/MenuNav';
 import {
     rectangleDisapear,
     imageTransition,
@@ -15,6 +14,45 @@ import {
 // Import Styles
 import './styles.scss';
 
+const transition = { duration: 2, ease: [0.6, 0.01, -0.05, 0.9] };
+
+const ville = {
+    initial: {
+      y: 0,
+    },
+    animate: {
+      y: 0,
+      transition: {
+        delayChildren: 0.6,
+        staggerChildren: 0.04,
+        staggerDirection: -1,
+      },
+    },
+  };
+  
+  const pays = {
+    initial: {
+      y: 0,
+    },
+    animate: {
+      y: 0,
+      transition: {
+        delayChildren: 0.6,
+        staggerChildren: 0.04,
+        staggerDirection: 1,
+      },
+    },
+  };
+  
+  const letter = {
+    initial: {
+      y: 400,
+    },
+    animate: {
+      y: 0,
+      transition: { duration: 1, ...transition },
+    },
+  };
 
 const rectanglesTransition1 = {
     ease: "easeIn",
@@ -52,9 +90,7 @@ const Acceuil = () => {
                 className="acceuil-container"
                 initial="initial"
                 animate= "in"
-                exit={{
-                    transition: .5,
-                }}
+                exit={{ transition: .5 }}
                 variants={imageVariants}
                 transition={imageTransition}
             />
@@ -87,8 +123,7 @@ const Acceuil = () => {
                 animate="visible"
                 variants={rectangleDisapear}
                 transition={{duration: 1}}
-            >
-                developpeur junior
+            > developpeur junior
             </motion.div>
             <motion.div
                 className="web-mobile"
@@ -96,8 +131,32 @@ const Acceuil = () => {
                 animate="visible"
                 variants={rectangleDisapear}
                 transition={{duration: 2}}
-            >
-                web & web mobile
+            > web & web mobile
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={{
+                opacity: 1,
+                x: 0,
+                transition: { delay: 1.2, ...transition },
+              }}
+              className='details'>
+            </motion.div>
+            <motion.div className='localisation'>
+              <motion.span className='ville' variants={ville}>
+                <motion.span className="span-ville" variants={letter}>M</motion.span>
+                <motion.span className="span-ville" variants={letter}>e</motion.span>
+                <motion.span className="span-ville" variants={letter}>t</motion.span>
+                <motion.span className="span-ville" variants={letter}>z</motion.span>
+              </motion.span>
+              <motion.span className='pays' variants={pays}>
+                <motion.span className="span-pays" variants={letter}>F</motion.span>
+                <motion.span className="span-pays" variants={letter}>r</motion.span>
+                <motion.span className="span-pays" variants={letter}>a</motion.span>
+                <motion.span className="span-pays" variants={letter}>n</motion.span>
+                <motion.span className="span-pays" variants={letter}>c</motion.span>
+                <motion.span className="span-pays" variants={letter}>e</motion.span>
+              </motion.span>
             </motion.div>
             <motion.div
                 className="folio"
@@ -132,9 +191,6 @@ const Acceuil = () => {
             )}
             { !rectangleValue && (
                 <>
-                    <motion.div className="contact" variants={rectangleDisapear} initial={{opacity: 0}} animate={{ opacity: 1}}>
-                        <Link to="/contact">contact</Link>
-                    </motion.div>
                     <motion.div className="year" variants={rectangleDisapear} initial={{opacity: 0}} animate={{ opacity: 1}}>2021</motion.div>
                 </>
             )}

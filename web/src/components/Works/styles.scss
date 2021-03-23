@@ -33,6 +33,10 @@ works-content {
     font-weight: bold;
 }
 
+#gradient {
+    height: 45vh;
+    margin: 1em;
+}
   
   @media (min-width: 1281px) {
     
@@ -50,7 +54,7 @@ works-content {
     }
 
     .info-div {
-        margin: 5em 4em 4em 5em;
+        margin: 5em 4em 5em 7em;
         flex: 1;
     }
 
@@ -93,7 +97,7 @@ works-content {
     }
 
     .info-div {
-        margin: 2em;
+        margin: 5em 4em 5em 7em;
         flex: 1;
     }
 

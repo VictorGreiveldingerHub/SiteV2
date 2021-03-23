@@ -10,14 +10,14 @@
 
 @media (min-width: 1281px) {
   
-    /* CSS */
-    .acceuil-container {
-      width: 100vw;
-      height: 100vh;
-      background: url("../../assets/images/img0.jpg") #f5c381 no-repeat center;
-      opacity: 0.5;
-      z-index: 1;
-    }
+  /* CSS */
+  .acceuil-container {
+    width: 100vw;
+    height: 100vh;
+    background: url("../../assets/images/img0.jpg") #f5c381 no-repeat center;
+    opacity: 0.5;
+    z-index: 1;
+  }
 
   .lastname {
     position: absolute;
@@ -43,105 +43,108 @@
     width: 4vw;
     background: rgb(53, 53, 53);
     opacity: .7;
-}
+  }
 
-.line-display {
-    position: relative;
-    bottom: 3.5vh;
-    right: 3vw;
-    width: 0px;
-    height: .3vh;
-    background: rgb(53, 53, 53);
-    text-shadow: .1rem .1rem black;
-}
+  .line-display {
+      position: relative;
+      bottom: 3.5vh;
+      right: 3vw;
+      width: 0px;
+      height: .3vh;
+      background: rgb(53, 53, 53);
+      text-shadow: .1rem .1rem black;
+  }
 
-.info {
-  position: absolute;
-  top: 9vh;
-  right: 22vw;
-  font-size: 1.5em;
-}
+  .info {
+    position: absolute;
+    top: 9vh;
+    right: 22vw;
+    font-size: 1.5em;
+  }
 
-.web-mobile {
-  position: absolute;
-  top: 9vh;
-  left: 22vw;
-  font-size: 1.5em;
-}
+  .web-mobile {
+    position: absolute;
+    top: 9vh;
+    left: 22vw;
+    font-size: 1.5em;
+  }
 
-.folio {
-  position: absolute;
-  top: 30vh;
-  left: 25vw;
-  font-size: 50px;
-}
+  .folio {
+    position: absolute;
+    top: 30vh;
+    left: 25vw;
+    font-size: 50px;
+  }
 
-.line-folio {
-position: relative;
-opacity: 0.7;
-height: 1px;
-background: rgb(53, 53, 53);
-}
+  .line-folio {
+  position: relative;
+  opacity: 0.7;
+  height: 1px;
+  background: rgb(53, 53, 53);
+  }
 
-.nbr-folio {
-  position: absolute;
-  top: 100%;
-  left: 25%;
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  font-size: 4em;
-  height: 15vh;
-  font-family: 'Bebas Neue';
-  letter-spacing: .5vh;
-  mix-blend-mode: darken;
-}
-.year {
-  position: absolute;
-  bottom: 20vh;
-  right: 45vw;
-  font-size: 3em;
-  overflow: hidden;
-  text-overflow: clip;
-  direction: rtl;
-  width: 4.2vw;
-}
-.contact {
-  position: absolute;
-  top: 10vh;
-  right: 7vw;
-  font-size: 1.5em;
-  letter-spacing: 0.1em;
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-}
+  .nbr-folio {
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 4em;
+    height: 15vh;
+    font-family: 'Bebas Neue';
+    letter-spacing: .5vh;
+    mix-blend-mode: difference;
+  }
+  .year {
+    position: absolute;
+    bottom: 20vh;
+    right: 45vw;
+    font-size: 3em;
+    overflow: hidden;
+    text-overflow: clip;
+    direction: rtl;
+    width: 4.2vw;
+  }
 
-    .rectangle-1 {
-      position: absolute;
-      top: 35vh;
-      left: 0;
-      height: 4vh;
-      background: url("../../assets/images/img0.jpg") 77.5vw 46.5vw;;
-      opacity: 0.5;
-      mix-blend-mode: darken;
-    }
+  .localisation {
+    position: absolute;
+    top: 10vh;
+    right: 5vw;
+    font-size: 1.5em;
+    letter-spacing: 0.05em;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+  .ville, .pays {
+    margin: 1em;
+  }
+
+  .rectangle-1 {
+    position: absolute;
+    top: 35vh;
+    left: 0;
+    height: 4vh;
+    background: url("../../assets/images/img0.jpg") 77.5vw 46.5vw;;
+    opacity: 0.5;
+  }
       
-    .rectangle-2 {
-       position: absolute;
-      top: 44.2vh;
-      left: 0;
-      height: 4vh;
-      background: url("../../assets/images/img0.jpg") 76.5vw 42vw;
-      opacity: 0.5;
-    }
+  .rectangle-2 {
+    position: absolute;
+    top: 44.2vh;
+    left: 0;
+    height: 4vh;
+    background: url("../../assets/images/img0.jpg") 76.5vw 42vw;
+    opacity: 0.5;
+  }
       
-    .rectangle-3 {
-      position: absolute;
-      top: 53.2vh;
-      left: 0;
-      height: 4vh;
-      background: url("../../assets/images/img0.jpg") 76.5vw 37.5vw;
-      opacity: 0.5;
-    }
+  .rectangle-3 {
+    position: absolute;
+    top: 53.2vh;
+    left: 0;
+    height: 4vh;
+    background: url("../../assets/images/img0.jpg") 76.5vw 37.5vw;
+    opacity: 0.5;
+  }
 }
   
 // /* 
@@ -213,7 +216,7 @@ background: rgb(53, 53, 53);
       height: 15vh;
       font-family: 'Bebas Neue';
       letter-spacing: .5vh;
-      mix-blend-mode: darken;
+      mix-blend-mode: difference;
   }
 
   .line-disapear {
@@ -237,23 +240,16 @@ background: rgb(53, 53, 53);
   }
 
   .localisation {
-      position: absolute;
-      bottom: 6.45vh;
-      right: 7vw;
-      font-size: .83vw;
-      letter-spacing: .02em;
-      writing-mode: vertical-rl;
-      text-orientation: mixed;
+    position: absolute;
+    top: 10vh;
+    right: 5vw;
+    font-size: 1.5em;
+    letter-spacing: 0.05em;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
   }
-
-  .contact {
-      position: absolute;
-      top: 10vh;
-      right: 7vw;
-      font-size: 0.90vw;
-      letter-spacing: 0.1em;
-      writing-mode: vertical-rl;
-      text-orientation: mixed;
+  .ville, .pays {
+    margin: 1em;
   }
 
   .year {
@@ -274,7 +270,7 @@ background: rgb(53, 53, 53);
       height: 4vh;
       background: url("../../assets/images/img0.jpg") 0 0;
       opacity: 0.5;
-      mix-blend-mode: darken;
+      mix-blend-mode: difference;
   }
 
   .rectangle-2 {
@@ -366,7 +362,7 @@ background: rgb(53, 53, 53);
       height: 15vh;
       font-family: 'Bebas Neue';
       letter-spacing: .5vh;
-      mix-blend-mode: darken;
+      mix-blend-mode: difference;
   }
   
   .line-disapear {
@@ -390,25 +386,19 @@ background: rgb(53, 53, 53);
   }
   
   .localisation {
-      position: absolute;
-      bottom: 6.45vh;
-      right: 7vw;
-      font-size: .83vw;
-      letter-spacing: .02em;
-      writing-mode: vertical-rl;
-      text-orientation: mixed;
+    position: absolute;
+    top: 10vh;
+    right: 5vw;
+    font-size: 1.5em;
+    letter-spacing: 0.05em;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
   }
   
-  .contact {
-      position: absolute;
-      top: 10vh;
-      right: 7vw;
-      font-size: 0.90vw;
-      letter-spacing: 0.1em;
-      writing-mode: vertical-rl;
-      text-orientation: mixed;
+  .ville, .pays {
+    margin: 1em;
   }
-  
+
   .count-div {
       position: absolute;
       bottom: 6.45vh;
@@ -508,27 +498,22 @@ background: rgb(53, 53, 53);
     font-size: 4em;
     font-family: 'Bebas Neue';
     letter-spacing: .5vh;
-    mix-blend-mode: darken;
+    mix-blend-mode: luminosity;
   }
 
   .localisation {
-    bottom: 2.45em;
-    right: 7vw;
-    font-size: 1em;
-    letter-spacing: .02em;
-    font-weight: bolder;
-    letter-spacing: .1em;
-    mix-blend-mode: darken;
+    position: absolute;
+    bottom: 10vh;
+    right: 5vw;
+    font-size: 1.5em;
+    letter-spacing: 0.05em;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    mix-blend-mode: luminosity;
   }
 
-  .contact {
-      position: absolute;
-      bottom: 20vh;
-      right: 7vw;
-      font-size: 1.5em;
-      letter-spacing: 0.1em;
-      writing-mode: vertical-rl;
-      text-orientation: mixed;
+  .ville, .pays {
+    margin: 1em;
   }
 
   .year {

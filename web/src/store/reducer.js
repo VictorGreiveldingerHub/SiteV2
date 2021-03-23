@@ -34,12 +34,6 @@ const initialState = {
       identification: 'Works',
       className:'works',
     },
-    {
-      id: 5,
-      url: '/contact',
-      identification: 'Contact',
-      className:'contact',
-    },
   ],
   socialMedias: [
     {

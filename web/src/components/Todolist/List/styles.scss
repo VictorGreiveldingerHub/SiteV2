@@ -2,13 +2,24 @@
     margin: 2em;
 }
 
-.todo-li {
+.todo {
     margin: 1em 0;
+    padding: 1em;
 }
 
 .todo-list-input {
     margin: 0 2em 0 0;
     padding: .2em;
+}
+
+.tododone {
+    opacity: 0.7;
+    margin: 1em 0;
+    padding: 1em;
+}
+
+.tododone .todo-span {
+    text-decoration: line-through;
 }
 
 @media (min-width: 360px) and (max-width: 540px) {

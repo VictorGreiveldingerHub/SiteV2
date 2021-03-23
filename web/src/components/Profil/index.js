@@ -13,7 +13,7 @@ import './styles.scss';
 const Profil = ({image}) => {
 
   const transition = {
-    duration: 0.7,
+    duration: 1,
     ease: [0.43, 0.13, 0.23, 0.96],
   };
 

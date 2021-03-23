@@ -1,16 +1,17 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import './styles.scss';
 
 const NbColors = () => {
     const nbColors = useSelector((state) => state.nbColors);
     
-    let sentence = `couleur généré`;
+    let sentence = `couleur générée`;
     if (nbColors > 1) {
-        sentence = `couleurs générés`;
+        sentence = `couleurs générées`;
     };
 
     return (
-        <div>{nbColors} {sentence}</div>
+        <div className="nbr-colors">{nbColors} {sentence}</div>
     );
 };
 

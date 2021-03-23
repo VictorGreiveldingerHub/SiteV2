@@ -3,10 +3,12 @@ import './styles.scss';
 
 const List = ({tasks, handleCheckboxChange}) => {
     const tasksJSX = tasks.map((t) => {
+        let taskClassNames = "todo";
+        if (t.done) taskClassNames += 'done';
         return (
             <li
                 key={t.id}
-                className="todo-li"
+                className={taskClassNames}
             >
                 <input 
                     type="checkbox"

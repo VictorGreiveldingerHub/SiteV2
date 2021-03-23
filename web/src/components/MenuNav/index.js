@@ -3,7 +3,6 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
 
 
 // Import Composants / fichiers
@@ -77,9 +76,10 @@ const MenuNav = () => {
                    
                     {/** Partie droite */}
                     <div className="contact-zone">
+                        <h2 className="contact-title">Contactez moi</h2>
                         <a href="https://www.linkedin.com/in/victorgreiveldinger/" target="no_blank">Linkedin</a>
                         <a href="https://github.com/VictorGreiveldingerHub" target="no_blank">Github</a>
-                        <Link to="/contact" style={{fontSize: "smaller"}}>victorgreiveldinger@gmail.com</Link>
+                        <a href="#" style={{fontSize: "smaller"}}>victorgreiveldinger@gmail.com</a>
                     </div>
                 </motion.div>
             )}
