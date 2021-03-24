@@ -45,7 +45,7 @@ export const imageVariants = {
 
 export const imageTransition = {
   ease: "easeOut",
-  delay: 5.2,
+  delay: 4.2,
 };
 
 export const pageTransition = {

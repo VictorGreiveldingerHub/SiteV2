@@ -79,7 +79,7 @@ const Works = () => {
                 </div>
                 <div>L'application fonctionnelle sur le coté</div>
             </section> */}
-            {/* <section className="projets">
+            <section className="projets" style={{display: "flex", flexDirection: "column"}}>
                 <div className="info-div">
                     <h3 className="info-div-h3">Portfolio V1</h3>
                     <section>
@@ -87,26 +87,31 @@ const Works = () => {
                         <div className="notions-div">
                             Utilisation d'un framework CSS (Semantic-ui-react), déploiement sur O2Switch, JSX, 
                         </div>
+                        <div className="notions-div">
+                            MVP disponible <a href="http://victorgreiveldinger.com" target="no_blank">ici</a>
+                        </div>
                     </section>
                 </div>
                 <div className="app-div">
                     <img
+                        style={{width: "100%"}}
                         className="image-site1"
                         src={Portfolio1}
                         alt="site web"
                     />
                 </div>
-            </section> */}
+            </section>
             <section className="projets">
                 <div className="info-div">
                     <h3 className="info-div-h3">Portfolio v2</h3>
                     <section>
                     <h4 className="notions">Notions</h4> 
-                    <div className="notions-div">Sans Framework css, mise en place manuelle de toute l'architecture du site, CSS / JSX </div>
+                    <div className="notions-div">
+                        Sans Framework css, CSS / JSX, responsive.
+                    <div className="notions-div">MVP : possibilité de voir mon travail depuis mobile & desktop</div>
+                    <div className="notions-div">Hébergement via O2Switch</div>
+                    </div>
                     </section>
-                </div>
-                <div className="app-div">
-
                 </div>
             </section>
         </motion.div>

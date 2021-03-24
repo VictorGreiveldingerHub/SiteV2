@@ -115,8 +115,16 @@
     writing-mode: vertical-rl;
     text-orientation: mixed;
   }
+
   .ville, .pays {
     margin: 1em;
+  }
+
+  .span-v {
+    display: inline-block;
+    position: relative;
+    font-weight: 400;
+    font-size: 20px;
   }
 
   .rectangle-1 {
@@ -248,8 +256,16 @@
     writing-mode: vertical-rl;
     text-orientation: mixed;
   }
+  
   .ville, .pays {
     margin: 1em;
+  }
+
+  .span-v {
+    display: inline-block;
+    position: relative;
+    font-weight: 400;
+    font-size: 20px;
   }
 
   .year {
@@ -399,6 +415,13 @@
     margin: 1em;
   }
 
+  .span-v {
+    display: inline-block;
+    position: relative;
+    font-weight: 400;
+    font-size: 20px;
+  }
+
   .count-div {
       position: absolute;
       bottom: 6.45vh;
@@ -514,6 +537,13 @@
 
   .ville, .pays {
     margin: 1em;
+  }
+
+  .span-v {
+    display: inline-block;
+    position: relative;
+    font-weight: 400;
+    font-size: 20px;
   }
 
   .year {

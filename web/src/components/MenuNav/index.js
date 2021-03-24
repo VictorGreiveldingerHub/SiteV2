@@ -76,7 +76,6 @@ const MenuNav = () => {
                    
                     {/** Partie droite */}
                     <div className="contact-zone">
-                        <h2 className="contact-title">Contactez moi</h2>
                         <a href="https://www.linkedin.com/in/victorgreiveldinger/" target="no_blank">Linkedin</a>
                         <a href="https://github.com/VictorGreiveldingerHub" target="no_blank">Github</a>
                         <a href="#" style={{fontSize: "smaller"}}>victorgreiveldinger@gmail.com</a>

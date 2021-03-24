@@ -124,7 +124,7 @@ works-content {
     ##Screen = B/w 481px to 767px
   */
   
-  @media (min-width: 541px) and (max-width: 766px) {
+  @media (min-width: 541px) and (max-width: 770px) {
     
     /* CSS */
     .projets:nth-child(1n) {
@@ -186,5 +186,6 @@ works-content {
 
     .app-div {
         margin: 1em auto;
+        width: 100%;
     }
 }

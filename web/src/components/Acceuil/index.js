@@ -25,7 +25,7 @@ const ville = {
       transition: {
         delayChildren: 0.6,
         staggerChildren: 0.04,
-        staggerDirection: -1,
+        staggerDirection: 1,
       },
     },
   };
@@ -46,10 +46,10 @@ const ville = {
   
   const letter = {
     initial: {
-      y: 400,
+      x: 20,
     },
     animate: {
-      y: 0,
+      x: 0,
       transition: { duration: 1, ...transition },
     },
   };
@@ -133,29 +133,20 @@ const Acceuil = () => {
                 transition={{duration: 2}}
             > web & web mobile
             </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={{
-                opacity: 1,
-                x: 0,
-                transition: { delay: 1.2, ...transition },
-              }}
-              className='details'>
-            </motion.div>
             <motion.div className='localisation'>
               <motion.span className='ville' variants={ville}>
-                <motion.span className="span-ville" variants={letter}>M</motion.span>
-                <motion.span className="span-ville" variants={letter}>e</motion.span>
-                <motion.span className="span-ville" variants={letter}>t</motion.span>
-                <motion.span className="span-ville" variants={letter}>z</motion.span>
+                <motion.span className="span-v" variants={letter}>M</motion.span>
+                <motion.span className="span-v" variants={letter}>e</motion.span>
+                <motion.span className="span-v" variants={letter}>t</motion.span>
+                <motion.span className="span-v" variants={letter}>z</motion.span>
               </motion.span>
               <motion.span className='pays' variants={pays}>
-                <motion.span className="span-pays" variants={letter}>F</motion.span>
-                <motion.span className="span-pays" variants={letter}>r</motion.span>
-                <motion.span className="span-pays" variants={letter}>a</motion.span>
-                <motion.span className="span-pays" variants={letter}>n</motion.span>
-                <motion.span className="span-pays" variants={letter}>c</motion.span>
-                <motion.span className="span-pays" variants={letter}>e</motion.span>
+                <motion.span className="span-v" variants={letter}>F</motion.span>
+                <motion.span className="span-v" variants={letter}>r</motion.span>
+                <motion.span className="span-v" variants={letter}>a</motion.span>
+                <motion.span className="span-v" variants={letter}>n</motion.span>
+                <motion.span className="span-v" variants={letter}>c</motion.span>
+                <motion.span className="span-v" variants={letter}>e</motion.span>
               </motion.span>
             </motion.div>
             <motion.div
