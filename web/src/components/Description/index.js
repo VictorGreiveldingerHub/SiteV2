@@ -135,39 +135,55 @@ const Description = () => {
           <ScrollForMore />
         </motion.div>
       </div>
-      {/* <div className='detailed-information' >
         <div className='container-information'>
-          <div className='row'>
             <section className="hero-section">
-              <div
-                className="help-section"
-                
-              >
-              Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP - Disponible ASAP -
+              <div className="help-section">Disponible - ASAP</div>
+              <div className="presentation-1">
+                <div className="presentation-top">
+                    <div className="nom">
+                      <h4 className="presentation-title">nom</h4>
+                      greiveldinger
+                    </div>
+                    <div className="prenom">
+                      <h4 className="presentation-title">prenom</h4>
+                      victor
+                    </div>
+                  </div>
+                <div className="presentation-mid">
+                  <div className="presentation-formation">
+                    <div>Issu d'une formation de développeur Fullsatck Js</div>
+                    <a href="https://oclock.io/formations/developpeur-web-fullstack-javascript" className="link-to-oclock" target="no_blank">O'clock</a>
+                  </div>
+                </div>
+                <div className="presentation-mid2">
+                    <div className="naissance">
+                      <h4 className="presentation-title">naissance</h4>
+                      22 - 11 - 1995
+                    </div>
+                    <div className="langues">
+                      <h4 className="presentation-title">langues</h4>
+                      français & anglais
+                    </div>
+                  </div>
+                <div className="presentation-bot">
+                    <div className="recherche">
+                      <h4 className="presentation-title">recherche</h4>
+                      poste de développeur Junior ou stage
+                    </div>
+                  </div>
+                <div className="presentation-bot2">
+                  <div className="mobilité">
+                    <h4 className="presentation-title">mobilité</h4>
+                    permis B - véhiculé
+                  </div>
+                  <div className="interet">
+                    <h4 className="presentation-title">intêrets</h4>
+                    Design - Awwwards - Codrops - nouvelles technologies
+                  </div>
+                </div>
               </div>
-              <section className="presentation-section">
-                <div className="presentation-1">
-                  Je m'appelle Victor Greiveldinger & j'ai récemment terminé une formation de développeur Fullstack Javascript avec une spécialité en React. Je recherche aujourd'hui une <span>opportunité de travail</span> en tant que stagiaire ou développeur Junior à Metz et au Luxembourg.
-                </div>
-                <div className="container-personnal">
-                  <div className="personnals" >
-                    22-11-1995
-                  </div>
-                  <div className="personnals">
-                    <span>Metz - Luxembourg <br/></span>
-                    <span>Permis B</span>
-                  </div>
-                  <div className="personnals">
-                    <span>Français : maternelle <br/></span>
-                    <span>Anglais : Niveau B2</span> 
-                  </div>
-                </div>
-              </section>
             </section>
-          </div>
-          
-        </div> 
-      </div>*/}
+        </div>          
     </motion.div>
   );
 };

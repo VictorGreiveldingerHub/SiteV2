@@ -39,12 +39,6 @@
     font-family: 'Della Respira', serif;
 }
 
-.birth {
-    display: flex;
-    justify-content: flex-end;
-    margin: 0 0 2em 0;
-}
-
 .first {
     margin-right: 72px;
 }
@@ -58,11 +52,6 @@
 
 .bottom-row {
     position: relative;
-}
-
-.container-information {
-    width: 100%;
-    height: 100vh;
 }
 
 .thumbnail-single {
@@ -91,63 +80,95 @@
 }
 
 .container-information {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
     background-color: rgb(51, 51, 51);
     color: rgb(238, 238, 216);
-    width: 100%;
-    padding: 0 0 200vh;
     font-size: 24px;
 }
 
 .hero-section {
     position: relative;
-    padding: 2em;
+    padding: 0 0em;
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
 .help-section {
-    white-space: nowrap;
-    font-size: 46px;
-    width: fit-content;
+    font-size: 33px;
+    height: 100%;
     letter-spacing: .5em;
-    margin: 0 0 0 -150vw;
-    border-top: 1px white solid 100%;
-    border-bottom: 1px white solid 100%;
+    border-left: 1px white solid 100%;
+    border-right: 1px white solid 100%;
     padding: 1em;
+    text-align: center;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: #fff;
     -webkit-text-stroke-width: 1px;
     text-transform: uppercase;
     color: transparent;
+    writing-mode: vertical-rl;
 }
 
-.presentation-section {
-    margin: auto;
-    height: 100%;
-}
 
+// Pour la CARD
 .presentation-1 {
-    margin: 3em 0 0 0;
-    letter-spacing: 0.1em;
+    margin: 2em auto;
     line-height: 1.1em;
-
-    & span {
-        font-size: larger;
-        font-weight: bold;
-        text-decoration-line: underline;
-    }
+    background-color: rgb(51, 51, 51);
+    color: rgb(238, 238, 216);
+    border: 1px solid rgb(238, 238, 216);
+    border-radius: 20px;
+    letter-spacing: .02em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 100;
+    line-height: 1.5em;
 }
 
-.container-personnal {
+.presentation-top, .presentation-mid, .presentation-mid2, .presentation-bot, .presentation-bot1 {
+    flex: 1;
+}
+
+.presentation-top, .presentation-mid2 {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(238, 238, 216);
+}
+
+.presentation-bot2 {
     display: flex;
     flex-direction: row;
 }
 
-.personnals {
-    flex: 1;
-    padding: 2em;
-    font-weight: lighter;
+.presentation-mid2, .presentation-bot1, .presentation-bot2 {
+    border-top: 1px solid rgb(238, 238, 216);
 }
+
+.nom, .naissance, .mobilité {
+    border-right: 1px solid rgb(238, 238, 216);
+    flex: 1;
+}
+
+.prenom, .langues, .interet {
+    flex: 1;
+}
+
+.nom, .prenom, .naissance, .presentation-formation, .langues, .recherche, .mobilité, .interet {
+    padding: .5em;
+
+    & .presentation-title {
+        text-transform: uppercase;
+        font-weight: 200;
+    }
+}
+////////////////////
 
 /* 
     ##Device = Tablets, Ipads (portrait)
@@ -194,25 +215,41 @@
         width: 324px;
         margin: auto;
     }
+
     .span-first {
         font-size: 45px;
     }
+
     .first {
         margin-right: 20px;
     }
+
     .model {
         height: 50vh;
         padding-top: 35vh;
     }
 
-    .container-information {
-        height: fit-content;
-        padding: 0;
+    .hero-section {
+        flex-direction: column;
     }
 
     .help-section {
-        margin: 0 0 0 -21.5em;
-        font-size: 29px;
+        letter-spacing: .5em;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        border-left: unset;
+        border-right: unset;
+        padding: 1em;
+        text-align: center;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: #fff;
+        -webkit-text-stroke-width: 1px;
+        text-transform: uppercase;
+        color: transparent;
+        writing-mode: unset;
+        width: 100%;
+        font-size: inherit;
+        height: auto;
     }
 }
 
@@ -233,14 +270,26 @@
         height: 50vh;
         padding-top: 35vh;
     }
-
-    .container-information {
-        height: fit-content;
-        padding: 0;
+    .hero-section {
+        flex-direction: column;
     }
 
     .help-section {
-        margin: 0 0 0 -21.5em;
-        font-size: 22px;
+        letter-spacing: .5em;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        border-left: unset;
+        border-right: unset;
+        padding: 1em;
+        text-align: center;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: #fff;
+        -webkit-text-stroke-width: 1px;
+        text-transform: uppercase;
+        color: transparent;
+        writing-mode: unset;
+        width: 100%;
+        font-size: inherit;
+        height: auto;
     }
 }

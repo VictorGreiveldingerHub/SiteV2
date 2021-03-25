@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 
 // Import Composants / fichiers
 import MenuSvg from 'src/assets/images/menu.svg';
+import logo from '../../assets/images/Logo.svg';
 
 // Import styles
 import './styles.scss';
@@ -76,9 +77,14 @@ const MenuNav = () => {
                    
                     {/** Partie droite */}
                     <div className="contact-zone">
-                        <a href="https://www.linkedin.com/in/victorgreiveldinger/" target="no_blank">Linkedin</a>
-                        <a href="https://github.com/VictorGreiveldingerHub" target="no_blank">Github</a>
-                        <a href="#" style={{fontSize: "smaller"}}>victorgreiveldinger@gmail.com</a>
+                        <div className="logo-container">
+                            <img src={logo} alt="logo" className="logo"/>
+                        </div>
+                        <div className="links-container">
+                            <a href="https://www.linkedin.com/in/victorgreiveldinger/" target="no_blank">Linkedin</a>
+                            <a href="https://github.com/VictorGreiveldingerHub" target="no_blank">Github</a>
+                            <a href="#">victorgreiveldinger@gmail.com</a>
+                        </div>
                     </div>
                 </motion.div>
             )}

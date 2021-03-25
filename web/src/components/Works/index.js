@@ -24,23 +24,65 @@ const Works = () => {
         >
             <section className="projets">
                 <div className="info-div">
-                    <h3 className="info-div-h3">React Todolist</h3>
-                    <section>
-                        <h4 className="notions">Notions</h4>
-                        <div className="notions-div">useState, séparation des composants, (pas d'utilisation de Redux pour cet exemple) mais passage de props et gestion des props (PropTypes).</div>
-                    </section>
+                    <div className="left-row">
+                        <h4 className="notions">Notions</h4> 
+                    </div>
+                    <div className="right-row">
+                        <div className="right-row-top">
+                            <h3 className="info-div-h3">React Todolist</h3>
+                        </div>
+                        <div className="right-row-top-1">
+                            <div className="general">
+                                <h4 className="projets-subtitle">general</h4>
+                                useState, séparation des composants, (pas d'utilisation de Redux pour cet exemple) mais passage de props et gestion des props (PropTypes).
+                            </div>
+                        </div>
+                        <div className="right-row-mid">
+                            <div className="mvp">
+                                <h4 className="projets-subtitle">mvp</h4>
+                                possibilité d'ajouter une tâche, compteur de tâche
+                            </div>
+                        </div>
+                        <div className="right-row-mid-1">
+                            <div className="amelioration">
+                                <h4 className="projets-subtitle">améliorations et veille</h4>
+                                possibilité de supprimer une tâche, drag & drop, mettre un libellé sur une tâche, tâche prioritaire en premiere, ajout d'effet à l'apparition / suppression de la tâche
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div className="app-div">
                     <Todolist />
                 </div>
             </section>
             <section className="projets">
-                <div className="info-div">
-                    <h3 className="info-div-h3">React Github API</h3>
-                    <section>
-                    <h4 className="notions">Notions</h4>
-                    <div className="notions-div">requête à une API, utilisation d'axios, useReducer, useEffect.</div>
-                    </section>
+                <div className="info-div-reverse">
+                    <div className="left-row-reverse">
+                        <h4 className="notions">Notions</h4> 
+                    </div>
+                    <div className="right-row">
+                        <div className="right-row-top-reverse">
+                            <h3 className="info-div-h3">React Github API</h3>
+                        </div>
+                        <div className="right-row-top-1-reverse">
+                            <div className="general">
+                                <h4 className="projets-subtitle">general</h4>
+                                requête à une API, utilisation d'axios, useReducer, useEffect
+                            </div>
+                        </div>
+                        <div className="right-row-mid-reverse">
+                            <div className="mvp">
+                                <h4 className="projets-subtitle">mvp</h4>
+                                faire une recherche grâce à l'API Github, nombre de résultat
+                            </div>
+                        </div>
+                        <div className="right-row-mid-1">
+                            <div className="amelioration">
+                                <h4 className="projets-subtitle">améliorations et veille</h4>
+                                améliorer l'experience utilisateur par l'ajout de spinner, auto-complétion, pagination des résultats, choix d'un thème dark ou light
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div className="app-div">
                     <GithubAPI />
@@ -48,49 +90,65 @@ const Works = () => {
             </section>
             <section className="projets">
                 <div className="info-div">
-                    <h3 className="info-div-h3">Gradient de couleur</h3>
-                    <section>
-                    <h4 className="notions">Notions</h4>
-                    <div className="notions-div">utilisation de Redux, un store, un reducer, useSelector, useDispatch, actions </div>
-                    </section>
+                    <div className="left-row">
+                        <h4 className="notions">Notions</h4> 
+                    </div>
+                    <div className="right-row">
+                        <div className="right-row-top">
+                            <h3 className="info-div-h3">Gradient de couleur</h3>
+                        </div>
+                        <div className="right-row-top-1">
+                            <div className="general">
+                                <h4 className="projets-subtitle">general</h4>
+                                utilisation de Redux, un store, un reducer, useSelector, useDispatch, actions.
+                            </div>
+                        </div>
+                        <div className="right-row-mid">
+                            <div className="mvp">
+                                <h4 className="projets-subtitle">mvp</h4>
+                                possibilité de générer la premiere, derniere ou les deux de maniere aléatoire. Changement du sens.
+                            </div>
+                        </div>
+                        <div className="right-row-mid-1">
+                            <div className="amelioration">
+                                <h4 className="projets-subtitle">améliorations et veille</h4>
+                                ajouter des directions
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div className="app-div">
                     <Gradient />
                 </div>
             </section>
             <section className="projets">
-                <div className="info-div">
-                    <h3 className="info-div-h3">Chatroom</h3>
-                    <section>
-                    <h4 className="notions">Notions</h4>
-                    <div className="notions-div">WebSocket</div>
-                    </section>
-                </div>
-                <div className="app-div">
-                    {/* <Chatroom /> */}
-                </div>
-            </section>
-            {/* <section className="projets">
-                <div>
-                    <h3>Letter Boxed (si j'ai le temps</h3>
-                    <section>
-                        Notions (gauche):
-                    </section>
-                </div>
-                <div>L'application fonctionnelle sur le coté</div>
-            </section> */}
-            <section className="projets" style={{display: "flex", flexDirection: "column"}}>
-                <div className="info-div">
-                    <h3 className="info-div-h3">Portfolio V1</h3>
-                    <section>
-                    <h4 className="notions">Notions</h4>
-                        <div className="notions-div">
-                            Utilisation d'un framework CSS (Semantic-ui-react), déploiement sur O2Switch, JSX, 
+                <div className="info-div-reverse">
+                    <div className="left-row-reverse">
+                        <h4 className="notions">Notions</h4> 
+                    </div>
+                    <div className="right-row">
+                        <div className="right-row-top-reverse">
+                            <h3 className="info-div-h3">Portfolio V1</h3>
                         </div>
-                        <div className="notions-div">
-                            MVP disponible <a href="http://victorgreiveldinger.com" target="no_blank">ici</a>
+                        <div className="right-row-top-1-reverse">
+                            <div className="general">
+                                <h4 className="projets-subtitle">general</h4>
+                                Utilisation d'un framework CSS (Semantic-ui-react), déploiement sur O2Switch, JSX, React.
+                            </div>
                         </div>
-                    </section>
+                        <div className="right-row-mid-reverse">
+                            <div className="mvp">
+                                <h4 className="projets-subtitle">mvp</h4>
+                                MVP disponible <a href="http://victorgreiveldinger.com" target="no_blank">ici</a>
+                            </div>
+                        </div>
+                        <div className="right-row-mid-1">
+                            <div className="amelioration">
+                                <h4 className="projets-subtitle">améliorations et veille</h4>
+                                pour l'instant ce site était essentiellement déstiné à l'entrainement
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div className="app-div">
                     <img
@@ -103,15 +161,32 @@ const Works = () => {
             </section>
             <section className="projets">
                 <div className="info-div">
-                    <h3 className="info-div-h3">Portfolio v2</h3>
-                    <section>
-                    <h4 className="notions">Notions</h4> 
-                    <div className="notions-div">
-                        Sans Framework css, CSS / JSX, responsive.
-                    <div className="notions-div">MVP : possibilité de voir mon travail depuis mobile & desktop</div>
-                    <div className="notions-div">Hébergement via O2Switch</div>
+                    <div className="left-row">
+                        <h4 className="notions">Notions</h4> 
                     </div>
-                    </section>
+                    <div className="right-row">
+                        <div className="right-row-top">
+                            <h3 className="info-div-h3">portfolio v2</h3>
+                        </div>
+                        <div className="right-row-top-1">
+                            <div className="general">
+                                <h4 className="projets-subtitle">general</h4>
+                                Sans Framework css, JSX, Redux & store, SoC, React, React-Router, framer-motion, hébergement via O2Switch.
+                            </div>
+                        </div>
+                        <div className="right-row-mid">
+                            <div className="mvp">
+                                <h4 className="projets-subtitle">mvp</h4>
+                                responsive, design, CSS,
+                            </div>
+                        </div>
+                        <div className="right-row-mid-1">
+                            <div className="amelioration">
+                                <h4 className="projets-subtitle">améliorations et veille</h4>
+                                ajout d'éléments pour l'amélioration de l'experience utilisateur, ajout de nouvelle application
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </motion.div>

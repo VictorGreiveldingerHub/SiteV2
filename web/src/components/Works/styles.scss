@@ -3,8 +3,14 @@ works-content {
     flex-direction: column;
 }
 
+.projets {
+    width: 100%;
+    display: flex;
+    padding: 5em;
+}
+
 .projets:nth-child(1n) {
-    flex-direction: row;
+    flex-direction: column;
     background-color: rgb(238, 238, 216);
     color: rgb(51, 51, 51);
 }
@@ -12,39 +18,86 @@ works-content {
 .projets:nth-child(2n) {
     background-color: rgb(51, 51, 51);
     color: rgb(238, 238, 216);
-    flex-direction: row-reverse;
+    flex-direction: column;
 }
 
-.projets {
-    width: 100%;
-    height: 100vh;
+// Pour la description des app 
+.info-div {
     display: flex;
+    margin: auto;
+    border: 1px solid rgb(51, 51, 51);
+    border-radius: 15px;
     flex-direction: row;
-
+    font-family: 'Work Sans', sans-serif;
 }
 
-.app-div {
-    overflow: scroll;
+.left-row {
+    border-right: 1px solid rgb(51, 51, 51);
+    writing-mode: vertical-rl;
+    padding: 0.3em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+
+.right-row-top, .right-row-top-1, .right-row-mid {
+    border-bottom: 1px solid rgb(51, 51, 51);
+}
+
+.info-div-reverse {
+    display: flex;
+    margin: auto;
+    border: 1px solid rgb(238, 238, 216);
+    border-radius: 15px;
+    flex-direction: row;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.left-row-reverse {
+    border-right: 1px solid rgb(238, 238, 216);
+    writing-mode: vertical-rl;
+    padding: 0.3em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+
+.right-row-top-reverse, .right-row-top-1-reverse, .right-row-mid-reverse {
+    border-bottom: 1px solid rgb(238, 238, 216);
+}
+
+.right-row {
+    display: flex;
+    flex-direction: column;
 }
 
 .info-div-h3 {
-    margin: 2em;
-    font-size: 26px;
-    font-weight: bold;
-}
-
-#gradient {
-    height: 45vh;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bolder;
+    font-size: x-large;
     margin: 1em;
 }
+
+.amelioration, .general, .mvp {
+    margin: 1em;
+    line-height: 1.5em;
+}
+
+.projets-subtitle {
+    text-transform: uppercase;
+    font-size: larger;
+    font-weight: bolder;
+}
+///////////////////////////
   
   @media (min-width: 1281px) {
     
     /* CSS */
     .projets:nth-child(1n) {
-        flex-direction: row;
         background-color: rgb(238, 238, 216);
         color: rgb(51, 51, 51);
+        flex-direction: row;
     }
 
     .projets:nth-child(2n) {
@@ -53,22 +106,6 @@ works-content {
         flex-direction: row-reverse;
     }
 
-    .info-div {
-        margin: 5em 4em 5em 7em;
-        flex: 1;
-    }
-
-    .notions {
-        position: absolute;
-        writing-mode: tb-rl;
-        text-transform: uppercase;
-        font-weight: bold;
-        letter-spacing: 1.3em;
-    }
-
-    .notions-div {
-        margin-left: 2em;
-    }
 
     .app-div {
         margin: 2em auto;
@@ -84,34 +121,7 @@ works-content {
   @media (min-width: 767px) and (max-width: 1280px) {
     
     /* CSS */
-    .projets:nth-child(1n) {
-        flex-direction: row;
-        background-color: rgb(238, 238, 216);
-        color: rgb(51, 51, 51);
-    }
-
-    .projets:nth-child(2n) {
-        background-color: rgb(51, 51, 51);
-        color: rgb(238, 238, 216);
-        flex-direction: row-reverse;
-    }
-
-    .info-div {
-        margin: 5em 4em 5em 7em;
-        flex: 1;
-    }
-
-    .notions {
-        position: absolute;
-        writing-mode: tb-rl;
-        text-transform: uppercase;
-        font-weight: bold;
-        letter-spacing: 1.3em;
-    }
-
-    .notions-div {
-        margin-left: 2em;
-    }
+    
 
     .app-div {
         margin: 2em auto;
@@ -139,20 +149,6 @@ works-content {
         flex-direction: column;
     }
 
-    .info-div {
-        margin: 2em;
-        text-align: center;
-
-    }
-    .notions {
-        font-weight: bolder;
-        letter-spacing: 0.1em;
-    }
-
-    .notions-div {
-        margin-top: 2em;
-    }
-
     .app-div {
         margin: 1em auto;
     }
@@ -171,17 +167,8 @@ works-content {
         flex-direction: column;
     }
 
-    .info-div {
-        margin: 2em;
-        text-align: center;
-    }
-    .notions {
-        font-weight: bolder;
-        letter-spacing: 0.1em;
-    }
-
-    .notions-div {
-        margin-top: 2em;
+    .projets {
+        padding: 3em 0.5em;
     }
 
     .app-div {
