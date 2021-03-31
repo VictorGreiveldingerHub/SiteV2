@@ -108,8 +108,13 @@ works-content {
 
 
     .app-div {
-        margin: 2em auto;
+        margin: auto 2em;
         flex: 1;
+    }
+
+    .video {
+        width: 560px;
+        height: 315px;
     }
   }
   
@@ -121,11 +126,14 @@ works-content {
   @media (min-width: 767px) and (max-width: 1280px) {
     
     /* CSS */
-    
-
     .app-div {
         margin: 2em auto;
         flex: 1;
+    }
+
+    .video {
+        width: 560px;
+        height: 315px;
     }
   }
   
@@ -150,7 +158,11 @@ works-content {
     }
 
     .app-div {
-        margin: 1em auto;
+        margin: 1em 0;
+    }
+
+    .video {
+        width: 100%;
     }
   }
 
@@ -173,6 +185,10 @@ works-content {
 
     .app-div {
         margin: 1em auto;
+        width: 100%;
+    }
+
+    .video {
         width: 100%;
     }
 }

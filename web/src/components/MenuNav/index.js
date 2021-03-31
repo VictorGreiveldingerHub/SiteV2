@@ -25,7 +25,7 @@ const MenuNav = () => {
     const navigationLinks = useSelector((state) => state.navigation);
 
     const backdrop = {
-        visible: { opacity: 1, duration: 2},
+        visible: { opacity: 1},
         hidden: { opacity: 0}
     };
     

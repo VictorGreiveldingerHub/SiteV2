@@ -2,7 +2,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
 
 // Import d'éléments annexes
 import {
@@ -46,11 +45,11 @@ const ville = {
   
   const letter = {
     initial: {
-      x: 20,
+        y: 20,
     },
     animate: {
-      x: 0,
-      transition: { duration: 1, ...transition },
+        y: 0,
+        transition: { duration: 1, ...transition },
     },
   };
 

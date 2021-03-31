@@ -183,10 +183,43 @@ const Works = () => {
                         <div className="right-row-mid-1">
                             <div className="amelioration">
                                 <h4 className="projets-subtitle">améliorations et veille</h4>
-                                ajout d'éléments pour l'amélioration de l'experience utilisateur, ajout de nouvelle application
+                                ajout d'éléments pour l'amélioration de l'experience utilisateur, ajout de nouvelle application, améliorer les transitions entre chaque page
                             </div>
                         </div>
                     </div>
+                </div>
+            </section>
+            <section className="projets">
+                <div className="info-div-reverse">
+                    <div className="left-row-reverse">
+                        <h4 className="notions">Notions</h4> 
+                    </div>
+                    <div className="right-row">
+                        <div className="right-row-top-reverse">
+                            <h3 className="info-div-h3">Pair2Peer</h3>
+                        </div>
+                        <div className="right-row-top-1-reverse">
+                            <div className="general">
+                                <h4 className="projets-subtitle">general</h4>
+                                dans le cadre de mon projet de fin d'étude, construction d'un site de mise en relation de développeur avec React, Bulma comme framework CSS, Hapi en back, react leaflet pour la map
+                            </div>
+                        </div>
+                        <div className="right-row-mid-reverse">
+                            <div className="mvp">
+                                <h4 className="projets-subtitle">mvp</h4>
+                                site responsive, possibilité d'inscription, de contact, un chat, modification de son profil
+                            </div>
+                        </div>
+                        <div className="right-row-mid-1">
+                            <div className="amelioration">
+                                <h4 className="projets-subtitle">ce que j'ai fait sur ce site</h4>
+                                Implémentation de la carte avec react leaflet et récupération des données utilisateurs via notre BDD, implémentation du formulaire de contact & d'inscription, mise en place d'une sécurité Recaptcha
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="app-div">
+                <iframe className="video" src="https://www.youtube.com/embed/nRSm9SfLXbw?start=2290" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
             </section>
         </motion.div>

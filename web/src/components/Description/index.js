@@ -142,17 +142,22 @@ const Description = () => {
                 <div className="presentation-top">
                     <div className="nom">
                       <h4 className="presentation-title">nom</h4>
-                      greiveldinger
+                      Greiveldinger
                     </div>
                     <div className="prenom">
-                      <h4 className="presentation-title">prenom</h4>
-                      victor
+                      <h4 className="presentation-title">prénom</h4>
+                      Victor
                     </div>
                   </div>
                 <div className="presentation-mid">
                   <div className="presentation-formation">
-                    <div>Issu d'une formation de développeur Fullsatck Js</div>
-                    <a href="https://oclock.io/formations/developpeur-web-fullstack-javascript" className="link-to-oclock" target="no_blank">O'clock</a>
+                    <div>Issu d'une formation de développeur Fullstack Javascript chez</div>
+                    <motion.a
+                      href="https://oclock.io/formations/developpeur-web-fullstack-javascript"
+                      className="link-to-oclock"
+                      target="no_blank"
+                      whileHover={{fontWeight: "bolder"}}
+                    >O'clock</motion.a>
                   </div>
                 </div>
                 <div className="presentation-mid2">
@@ -168,7 +173,7 @@ const Description = () => {
                 <div className="presentation-bot">
                     <div className="recherche">
                       <h4 className="presentation-title">recherche</h4>
-                      poste de développeur Junior ou stage
+                      poste de développeur Junior ou stage développeur Front-end / Fullstack
                     </div>
                   </div>
                 <div className="presentation-bot2">

@@ -12,7 +12,7 @@
   
   /* CSS */
   .acceuil-container {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background: url("../../assets/images/img0.jpg") #f5c381 no-repeat center;
     opacity: 0.5;
@@ -164,7 +164,7 @@
     
     /* CSS */
   .acceuil-container {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-image: url("../../assets/images/img0.jpg");
     opacity: 0.5;
@@ -224,7 +224,7 @@
       height: 15vh;
       font-family: 'Bebas Neue';
       letter-spacing: .5vh;
-      mix-blend-mode: difference;
+      mix-blend-mode: darken;
   }
 
   .line-disapear {
@@ -249,24 +249,17 @@
 
   .localisation {
     position: absolute;
-    top: 10vh;
+    bottom: 9vh;
     right: 5vw;
     font-size: 1.5em;
     letter-spacing: 0.05em;
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
+    font-size: 0.8em;
   }
   
-  .ville, .pays {
-    margin: 1em;
+  .pays {
+    writing-mode: vertical-lr;
   }
 
-  .span-v {
-    display: inline-block;
-    position: relative;
-    font-weight: 400;
-    font-size: 20px;
-  }
 
   .year {
       position: absolute;
@@ -286,7 +279,6 @@
       height: 4vh;
       background: url("../../assets/images/img0.jpg") 0 0;
       opacity: 0.5;
-      mix-blend-mode: difference;
   }
 
   .rectangle-2 {
@@ -310,15 +302,13 @@
 
 //   /* 
 //     ##Device = Tablets
-//  
 //   */
   
   @media (min-width: 541px) and (max-width: 766px) {
     
     /* CSS */
-
     .acceuil-container {
-      width: 100vw;
+      width: 100%;
       height: 100vh;
       background-image: url("../../assets/images/img0.jpg");
       opacity: 0.5;
@@ -340,33 +330,33 @@
         color: rgb(68, 68, 68);
     }
   
-  .info {
-      position: absolute;
-      top: 9vh;
-      right: 22vw;
-      font-size: 0.8em;
-  }
+    .info {
+        position: absolute;
+        top: 9vh;
+        right: 22vw;
+        font-size: 0.8em;
+    }
+    
+    .web-mobile {
+        position: absolute;
+        top: 9vh;
+        left: 22vw;
+        font-size: 0.8em;
+    }
   
-  .web-mobile {
-      position: absolute;
-      top: 9vh;
-      left: 22vw;
-      font-size: 0.8em;
-  }
-  
-  .folio {
-      position: absolute;
-      top: 30vh;
-      left: 5vw;
-      font-size: 50px;
-  }
-  
-  .line-folio {
-    position: relative;
-    opacity: 0.7;
-    height: 1px;
-    background: rgb(53, 53, 53);
-  }
+    .folio {
+        position: absolute;
+        top: 30vh;
+        left: 5vw;
+        font-size: 50px;
+    }
+    
+    .line-folio {
+      position: relative;
+      opacity: 0.7;
+      height: 1px;
+      background: rgb(53, 53, 53);
+    }
   
   .nbr-folio {
       position: absolute;
@@ -382,33 +372,34 @@
   }
   
   .line-disapear {
-      position: relative;
-      bottom: 1.5vh;
-      left: 44vw;
-      height: .2vh;
-      width: 4vw;
-      background: rgb(53, 53, 53);
-      opacity: .7;
+    position: relative;
+    bottom: 1.5vh;
+    left: 44vw;
+    height: .2vh;
+    width: 4vw;
+    background: rgb(53, 53, 53);
+    opacity: .7;
   }
   
   .line-display {
-      position: relative;
-      bottom: 2.5vh;
-      right: 5vw;
-      width: 0px;
-      height: .3vh;
-      background: rgb(53, 53, 53);
-      text-shadow: .1rem .1rem black;
+    position: relative;
+    bottom: 2.5vh;
+    right: 5vw;
+    width: 0px;
+    height: .3vh;
+    background: rgb(53, 53, 53);
+    text-shadow: .1rem .1rem black;
   }
   
   .localisation {
     position: absolute;
     top: 10vh;
     right: 5vw;
-    font-size: 1.5em;
+    font-size: 2em;
     letter-spacing: 0.05em;
     writing-mode: vertical-rl;
     text-orientation: mixed;
+    mix-blend-mode: difference;
   }
   
   .ville, .pays {

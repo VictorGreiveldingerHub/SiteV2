@@ -6,34 +6,32 @@
 .global-section {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: 100vh;
     background-color: rgb(238, 238, 216);
     color: rgb(51, 51, 51);
     justify-content: center;
     align-items: center;
+    padding: 4em 5em;
+}
+
+.global-container {
+    display: flex;
+    flex-direction: row;
 }
 
 .frontend-section {
+    padding: 4em 5em;
     display: flex;
-    flex-direction: row;
     width: 100%;
-    height: 100vh;
     background-color: rgb(51, 51, 51);
     color: rgb(238, 238, 216);
     justify-content: center;
     align-items: center;
 }
 
-.backend-section {
+.front-container {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(238, 238, 216);
-    color: rgb(51, 51, 51);
-    justify-content: center;
-    align-items: center;
+
 }
 
 .skills-h3 {
@@ -51,24 +49,63 @@
 
 .skills-div {
     overflow: hidden;
-    flex: 2;
+    flex: 3;
     white-space: pre-wrap;
     line-height: 1.1em;
     letter-spacing: .1em;
-
-    & div {
-        margin: 1.5em;
-    }
-
-    & h4 {
-        font-weight: bolder;
-        text-decoration: overline;
-    }
 }
 
 .h3-span {
     writing-mode: vertical-rl;
     text-orientation: mixed;
+    text-decoration: overline;
+}
+
+.after-soft {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(51, 51, 51);
+    border-radius: 15px;
+    width: fit-content;
+}
+
+.after-h4 {
+    padding: 1em;
+    font-weight: bolder;
+    text-decoration: overline;
+}
+
+.opquast {
+    border-bottom: 1px solid rgb(51, 51, 51);
+    display: flex;
+    flex-direction: column;
+}
+
+.more, .results {
+    border: 1px solid rgb(238, 238, 216);
+    padding: 0.5em;
+    border-radius: 30px;
+    margin: 1em;
+    background-color: rgb(51, 51, 51);
+    color: rgb(238, 238, 216);
+    width: fit-content;
+    margin: .5em;
+}
+
+.soft-title {
+    text-decoration: underline;
+    margin: 1em;
+}
+
+.liste {
+    width: 100%;
+}
+.item-skill {
+    margin: 1em 0;
+}
+
+.elao-span {
+    margin: 1em;
 }
 
 // /* 
@@ -79,51 +116,7 @@
 //   @media (min-width: 1281px) {
     
 //     /* CSS */
-//     .thumbnail {
-//         overflow: hidden;
-//         position: relative;
-//         margin: auto;
-//         height: 100vh;
-//         width: 624px;
-//         top: 7em;
-//     }
-    
-//     .container {
-//         position: relative;
-//     }
-    
-//     .row-center {
-//         height: 100%;
-//         align-items: center;
-//         margin: auto;
-//     }
-    
-//     .image-container {
-//         position: relative;
-//     }
-    
-//     .frame img {
-//         width: 100%;
-//     }
-    
-//     .information {
-//         display: flex;
-//         flex-direction: row;
-//         justify-content: space-between;
-//         top: 3vh;
-//         left: 12vw;
-//         position: relative;
-//         font-size: .9em;
-//     }
-    
-//     .title-name {
-//         position: relative;
-//     }
-    
-//     .caracteristique {
-//         position: relative;
-//         left: -15vw;
-//     }
+//     
 //   }
   
 //   /* 
@@ -133,51 +126,7 @@
 //   @media (min-width: 767px) and (max-width: 1280px) {
     
 //     /* CSS */
-//     .thumbnail {
-//         overflow: hidden;
-//         position: relative;
-//         margin: auto;
-//         height: 100vh;
-//         width: 524px;
-//         top: 7em;
-//     }
-    
-//     .container {
-//         position: relative;
-//     }
-    
-//     .row-center {
-//         height: 100%;
-//         align-items: center;
-//         margin: auto;
-//     }
-    
-//     .image-container {
-//         position: relative;
-//     }
-    
-//     .frame img {
-//         width: 100%;
-//     }
-    
-//     .information {
-//         display: flex;
-//         flex-direction: row;
-//         justify-content: space-between;
-//         top: 3vh;
-//         left: 12vw;
-//         position: relative;
-//         font-size: .9em;
-//     }
-    
-//     .title-name {
-//         position: relative;
-//     }
-    
-//     .caracteristique {
-//         position: relative;
-//         left: -15vw;
-//     }
+//     
 //   }
   
 //   /* 
@@ -185,86 +134,16 @@
 //     ##Screen = B/w 481px to 767px
 //   */
   
-//   @media (min-width: 541px) and (max-width: 766px) {
+@media (min-width: 541px) and (max-width: 766px) {
     
 //     /* CSS */
-//     .thumbnail {
-//         overflow: hidden;
-//         position: relative;
-//         margin: auto;
-//         height: 100vh;
-//         width: 424px;
-//         top: 7em;
-//     }
-    
-//     .container {
-//         position: relative;
-//     }
-    
-//     .row-center {
-//         height: 100%;
-//         align-items: center;
-//         margin: auto;
-//     }
-    
-//     .image-container {
-//         position: relative;
-//     }
-    
-//     .frame img {
-//         width: 100%;
-//     }
-    
-//     .information {
-//         display: flex;
-//         flex-direction: row;
-//         justify-content: space-between;
-//         top: 3vh;
-//         left: 12vw;
-//         position: relative;
-//         font-size: .9em;
-//     }
-    
-//     .title-name {
-//         position: relative;
-//     }
-    
-//     .caracteristique {
-//         position: relative;
-//         left: -15vw;
-//     }
-//   }
+    .global-container, .front-container {
+        flex-direction: column;
+    }
+}
 
 @media (min-width: 360px) and (max-width: 540px) {
-    .global-section {
-        display: flex;
+    .global-container, .front-container {
         flex-direction: column;
-        width: 100%;
-        height: 100%;
-        background-color: rgb(238, 238, 216);
-        color: rgb(51, 51, 51);
-        justify-content: center;
-        align-items: center;
-    }
-    .frontend-section {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        background-color: rgb(51, 51, 51);
-        color: rgb(238, 238, 216);
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .backend-section {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        background-color: rgb(238, 238, 216);
-        color: rgb(51, 51, 51);
-        justify-content: center;
-        align-items: center;
     }
 }
