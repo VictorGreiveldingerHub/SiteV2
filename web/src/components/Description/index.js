@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import ImageProfil from './profil.jpg';
+import ImageProfil from 'src/assets/images/profil.jpg';
 import './styles.scss';
 
 // Components
