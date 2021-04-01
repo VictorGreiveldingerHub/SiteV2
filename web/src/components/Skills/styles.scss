@@ -108,6 +108,9 @@
     margin: 1em;
 }
 
+.btns-res {
+    display: flex;
+}
 // /* 
 //     ##Device = Tablets, Ipads (portrait)
 //     ##Screen = B/w 768px to 1024px
@@ -140,10 +143,28 @@
     .global-container, .front-container {
         flex-direction: column;
     }
+
+    .btns-res {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills-h3 {
+        text-align: center;
+    }
 }
 
 @media (min-width: 360px) and (max-width: 540px) {
     .global-container, .front-container {
         flex-direction: column;
+    }
+
+    .btns-res {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills-h3 {
+        text-align: center;
     }
 }

@@ -33,12 +33,14 @@ const Skills = () => {
                                 <h4 className="after-h4">Suite à la formation</h4>
                                 <div className="opquast">
                                     <h3 className="soft-title">Opquast</h3>
-                                    <motion.div className="results" whileHover={{color: "rgb(51, 51, 51)", backgroundColor: "rgb(238, 238, 216)"}}>
-                                        <a href="https://directory.opquast.com/fr/certificat/92F3MC/" target="no_blank" className="resultats">Mes résultats</a>
-                                    </motion.div>
-                                    <motion.div className="more" whileHover={{color: "rgb(51, 51, 51)", backgroundColor: "rgb(238, 238, 216)"}}>
-                                        <a href="https://www.opquast.com/" className="description-opquast" target="no_blank">En savoir plus</a>
-                                    </motion.div>
+                                    <div className="btns-res">
+                                        <motion.div className="results" whileHover={{color: "rgb(51, 51, 51)", backgroundColor: "rgb(238, 238, 216)"}}>
+                                            <a href="https://directory.opquast.com/fr/certificat/92F3MC/" target="no_blank" className="resultats">Mes résultats</a>
+                                        </motion.div>
+                                        <motion.div className="more" whileHover={{color: "rgb(51, 51, 51)", backgroundColor: "rgb(238, 238, 216)"}}>
+                                            <a href="https://www.opquast.com/" className="description-opquast" target="no_blank">En savoir plus</a>
+                                        </motion.div>
+                                    </div>
                                 </div>
                                 <div className="elao">
                                     <h3 className="soft-title">ElAO</h3>
@@ -65,7 +67,7 @@ const Skills = () => {
                             <div>
                                 <div className="skill-left-row">
                                     <h4 className="after-h4">Récemment</h4>
-                                    <div>Apprentissage de ThreeJs, React Three Fiber, WebGl, framer-motion, Locomotive-Scroll ...</div>
+                                    <div>Apprentissage de ThreeJs, React Three Fiber, WebGl, framer-motion, Locomotive-Scroll (Projets en cours)</div>
                                 </div>
                                 <div className="skill-right-row">
                                     <h4 className="after-h4">A venir</h4>

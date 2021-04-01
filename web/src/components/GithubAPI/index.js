@@ -9,7 +9,7 @@ import Search from './Search';
 import Repos from './Repos';
 
 const GITHUB_API_URL = 'https://api.github.com/search/repositories?q=';
-const DEFAULT_QUERY = 'react';
+const DEFAULT_QUERY = '';
 
 const GithubAPI = () => {
 
@@ -39,7 +39,7 @@ const GithubAPI = () => {
         // Chargement asynchrone des résultats => feedback visuel
         query: DEFAULT_QUERY,
         // message pour l'utilisateur
-        message: '',
+        message: '0',
     });
     
     // Effet de bord : récupération de repos depuis l'API GitHub.

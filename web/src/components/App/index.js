@@ -17,7 +17,7 @@ import Works from 'src/components/Works';
 // import Contact from 'src/components/Contact';
 import MenuNav from 'src/components/MenuNav';
 // == Import
-import './styles.css';
+import './styles.scss';
 
 // == Composant
 const App = () => {
@@ -30,7 +30,7 @@ const App = () => {
         <Switch location={location} key={location.pathname}>
           <Route exact path="/"><Acceuil /></Route>
           <Route exact path="/profil"><Profil /></Route>
-          <Route exact path="/profil/victor-greiveldinger"><Description /></Route>
+          <Route exact path="/victor-greiveldinger"><Description /></Route>
           <Route exact path="/skills"><Skills /></Route>
           <Route exact path="/works"><Works /></Route>
           {/* <Route exact path="/contact"><Contact /></Route> */}

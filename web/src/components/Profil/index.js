@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import ProgressiveImage from "react-progressive-image";
 import ImageProfil from 'src/assets/images/profil.jpg';
 import {
   pageVariants,
@@ -32,19 +31,13 @@ const Profil = ({image}) => {
               ref={image}
             >
               <div className='frame'>
-                <Link to={`/profil/victor-greiveldinger`}>
-                  <ProgressiveImage
-                    src={ImageProfil}
-                    placeholder={ImageProfil}>
-                    {(src) => (
+                <Link to={`/victor-greiveldinger`}>
                       <motion.img
-                        src={src}
+                        src={ImageProfil}
                         alt='Victor Greiveldinger'
                         whileHover={{ scale: 1.1 }}
                         transition={transition}
                       />
-                    )}
-                  </ProgressiveImage>
                 </Link>
             <motion.div
               exit={{ opacity: 0 }}

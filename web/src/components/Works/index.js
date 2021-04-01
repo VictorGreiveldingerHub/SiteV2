@@ -139,13 +139,13 @@ const Works = () => {
                         <div className="right-row-mid-reverse">
                             <div className="mvp">
                                 <h4 className="projets-subtitle">mvp</h4>
-                                MVP disponible <a href="http://victorgreiveldinger.com" target="no_blank">ici</a>
+                                possibilité de voir mon travail, responsive, interactif avec les différentes applications intégrées
                             </div>
                         </div>
                         <div className="right-row-mid-1">
                             <div className="amelioration">
                                 <h4 className="projets-subtitle">améliorations et veille</h4>
-                                pour l'instant ce site était essentiellement déstiné à l'entrainement
+                                pour l'instant ce site était essentiellement destiné à l'entrainement
                             </div>
                         </div>
                     </div>
@@ -213,7 +213,7 @@ const Works = () => {
                         <div className="right-row-mid-1">
                             <div className="amelioration">
                                 <h4 className="projets-subtitle">ce que j'ai fait sur ce site</h4>
-                                Implémentation de la carte avec react leaflet et récupération des données utilisateurs via notre BDD, implémentation du formulaire de contact & d'inscription, mise en place d'une sécurité Recaptcha
+                                Implémentation de la carte avec react leaflet et récupération des données utilisateurs via notre BDD, implémentation du formulaire de contact & d'inscription, mise en place d'une sécurité Recaptcha.
                             </div>
                         </div>
                     </div>

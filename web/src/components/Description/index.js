@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import ImageProfil from 'src/assets/images/profil.jpg';
+import ImageProfil from '../../assets/images/profil.jpg';
 import './styles.scss';
 
 // Components
@@ -99,7 +99,7 @@ const Description = () => {
           initial={{
             scale: 1,
             width: "524px",
-            y:"-27.5vh",
+            y:"-200px",
             margin: "auto",
           }}
           animate={{
@@ -107,7 +107,7 @@ const Description = () => {
             y: 0,
             width: "100%",
             opacity: 1,
-            transition: { delay: 0.3, ...transition }
+            transition: { delay: 0.2, ...transition }
           }}
           >
           <div className='bottom'>

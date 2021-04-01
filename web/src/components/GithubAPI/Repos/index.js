@@ -4,13 +4,13 @@ import './styles.scss';
 
 const Repos = ({ results }) => {
     const resultsJSX = results.map((repo) => {
-        return <Repositories key={repo.id} {...repo} />;
-      });
+      return <Repositories key={repo.id} {...repo} />;
+    });
     
-      return (
-        <section className="repos-results">
-          <div>{resultsJSX}</div>
-        </section>
+    return (
+      <section className="repos-results">
+        <div>{resultsJSX}</div>
+      </section>
       );
 };
 

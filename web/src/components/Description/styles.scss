@@ -17,10 +17,11 @@
     width: 524px;
 }
 
-.bottom {
-    height: 100%;
-    width: 100%;
-}
+// .bottom {
+//     height: 100%;
+//     width: 100%;
+// }
+
 .details {
     display: flex;
     align-items: center;
@@ -169,12 +170,17 @@
     }
 }
 
+.presentation-formation {
+    text-align: center;
+}
+
 .link-to-oclock {
     border: 1px solid rgb(238, 238, 216);
     padding: .2em .5em;
     border-radius: 30px;
     background-color: rgb(238, 238, 216);
     color: rgb(51, 51, 51);
+    justify-content: center;
 }
 ////////////////////
 
