@@ -31,7 +31,7 @@ const Profil = ({image}) => {
               ref={image}
             >
               <div className='frame'>
-                <Link to={`/profil/victor-greiveldinger`}>
+                <Link to={`/victor-greiveldinger`}>
                       <motion.img
                         src={ImageProfil}
                         alt='Victor Greiveldinger'
