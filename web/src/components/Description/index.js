@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import ImageProfil from 'src/assets/images/profil.jpg';
+import imageProfil from '../../assets/images/profil.jpg';
 import './styles.scss';
 
 // Components
@@ -119,7 +119,7 @@ const Description = () => {
                   transition={transition}
                 >
                   <motion.img
-                    src={ImageProfil}
+                    src={imageProfil}
                     alt='an image'
                     className="description-image"
                     initial={{ scale: 1.0 }}
